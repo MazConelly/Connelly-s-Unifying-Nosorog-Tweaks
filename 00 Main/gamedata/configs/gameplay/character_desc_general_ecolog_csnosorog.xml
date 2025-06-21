@@ -1,0 +1,16 @@
+
+<!-- 1 eco nosorog -->
+<specific_character id="sim_default_ecolog_5_default_csnosorog_0" team_default = "1">
+#include "gameplay\profiles\character_desc_ecolog_5.xml"
+    <icon>ui_inGame2_nosorog</icon>
+    <snd_config>characters_voice\human\ecolog_3\</snd_config>
+    <visual>actors\stalker_ecologist\stalker_eco_nosorog</visual>
+</specific_character>
+
+<!-- 1 turtle -->
+<!-- <specific_character id="sim_default_ecolog_5_default_csnosorog_1" team_default = "1">
+#include "gameplay\profiles\character_desc_ecolog_5.xml"
+    <icon>ui_inGame2_nosorog</icon>
+    <snd_config>characters_voice\human\ecolog_3\</snd_config>
+    <visual>actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle</visual>
+</specific_character> -->

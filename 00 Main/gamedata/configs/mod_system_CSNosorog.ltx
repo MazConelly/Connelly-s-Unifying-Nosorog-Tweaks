@@ -1,0 +1,547 @@
+
+;-------General tweaks to exos and nosorogs to respect the proper damage of their parts
+
+;--First we buff the heads of radsuits and exos, so their resistance properly correspond to that of the exohelm
+
+![actor_armor_radiation]:head_damage_040, !head_damage_030,
+![actor_armor_freedom_exo]:head_damage_040, !head_damage_030,
+![actor_armor_bandit_exo]:head_damage_040, !head_damage_030,
+![actor_armor_exo]:head_damage_040, !head_damage_030,
+![actor_armor_duty_exo]:head_damage_040, !head_damage_030,
+
+;The army exo is a special kind. It gets a buff of 5 to head and torso over average exos
+;So we buff its head. We'll gave it its own head bones
+[head_damage_043]; army exo ; CLASS III + and a half
+bip01_neck 			 		= 1, 0.43
+bip01_head 			 		= 1, 0.43
+eyelid_1 			 		= 1, 0.43
+eye_left 			 		= 1, 0.43
+eye_right 			 		= 1, 0.43
+jaw_1 		 		 		= 1, 0.43
+
+![actor_armor_military_exo]:head_damage_043, !head_damage_035,
+
+;--Some radiation outfits have a nosorog resistance. Let's standardize them
+;maybe we can find them a non crazy buff?
+;These were using the nosorog bones set, 45 + 35
+;First we create a new set. It'd be silly to make them surpass exos, so we find a middle ground
+;Torso 43 it's like the weaker exos. That's fine. And we give them the 40 from exohelm
+;Most radsuits have an ap_scale of 0.75, but let's leave these the 0.7. They're supposed to be better anyway.
+;This way they're still the better radsuits, but only barely as good as the lightest exos
+[actor_armor_radiation_extra]:body_damage_043, head_damage_040
+ap_scale						= 0.7
+
+;Now we change the bones set for the super radsuits
+![exo_wood_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_dolg_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_dolg_red_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_dolg_urban_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_dolg_wood_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_merc_grass_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_merc_urban_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![exo_merc_wood_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+![freedom_exo_vineleaf_outfit]
+bones_koeff_protection        = actor_armor_radiation_extra
+
+;now Nosorogs should get the 45 to head, as per Spartan helmet
+;and to separate them from exos, 55 to torso across the board, with 60 for army nosorog
+;But there's no body_damage section above 50, so we gotta do them ourselves
+
+;this will be the nosorog torso for a non combat faction, like ecologist
+[body_damage_053]
+bip01_pelvis 				= 1, 0.53
+bip01_spine 		 		= 1, 0.53
+bip01_spine1 		 		= 1, 0.53
+bip01_spine2 		 		= 1, 0.53
+bip01_l_clavicle	 		= 1, 0.53
+bip01_l_upperarm	 		= 1, 0.53
+bip01_l_forearm	 	 		= 1, 0.53
+bip01_l_hand	 	 		= 1, 0.105
+bip01_r_clavicle	 		= 1, 0.53
+bip01_r_upperarm	 		= 1, 0.53
+bip01_r_forearm	 	 		= 1, 0.53
+bip01_r_hand	 	 		= 1, 0.105
+bip01_l_thigh	 	 		= 1, 0.53
+bip01_l_calf	 	 		= 1, 0.53
+bip01_l_foot	 	 		= 1, 0.105
+bip01_r_thigh	 	 		= 1, 0.53
+bip01_r_calf	 	 		= 1, 0.53
+bip01_r_foot	 	 		= 1, 0.105
+
+;this will be our "average nosorog" torso
+[body_damage_055]
+bip01_pelvis 				= 1, 0.55
+bip01_spine 		 		= 1, 0.55
+bip01_spine1 		 		= 1, 0.55
+bip01_spine2 		 		= 1, 0.55
+bip01_l_clavicle	 		= 1, 0.55
+bip01_l_upperarm	 		= 1, 0.55
+bip01_l_forearm	 	 		= 1, 0.55
+bip01_l_hand	 	 		= 1, 0.11
+bip01_r_clavicle	 		= 1, 0.55
+bip01_r_upperarm	 		= 1, 0.55
+bip01_r_forearm	 	 		= 1, 0.55
+bip01_r_hand	 	 		= 1, 0.11
+bip01_l_thigh	 	 		= 1, 0.55
+bip01_l_calf	 	 		= 1, 0.55
+bip01_l_foot	 	 		= 1, 0.11
+bip01_r_thigh	 	 		= 1, 0.55
+bip01_r_calf	 	 		= 1, 0.55
+bip01_r_foot	 	 		= 1, 0.11
+
+;the torso for combat factions, like Duty
+[body_damage_057]
+bip01_pelvis 				= 1, 0.57
+bip01_spine 		 		= 1, 0.57
+bip01_spine1 		 		= 1, 0.57
+bip01_spine2 		 		= 1, 0.57
+bip01_l_clavicle	 		= 1, 0.57
+bip01_l_upperarm	 		= 1, 0.57
+bip01_l_forearm	 	 		= 1, 0.57
+bip01_l_hand	 	 		= 1, 0.115
+bip01_r_clavicle	 		= 1, 0.57
+bip01_r_upperarm	 		= 1, 0.57
+bip01_r_forearm	 	 		= 1, 0.57
+bip01_r_hand	 	 		= 1, 0.115
+bip01_l_thigh	 	 		= 1, 0.57
+bip01_l_calf	 	 		= 1, 0.57
+bip01_l_foot	 	 		= 1, 0.115
+bip01_r_thigh	 	 		= 1, 0.57
+bip01_r_calf	 	 		= 1, 0.57
+bip01_r_foot	 	 		= 1, 0.115
+
+;oh my, the torso for the army nosorog
+[body_damage_060]
+bip01_pelvis 				= 1, 0.6
+bip01_spine 		 		= 1, 0.6
+bip01_spine1 		 		= 1, 0.6
+bip01_spine2 		 		= 1, 0.6
+bip01_l_clavicle	 		= 1, 0.6
+bip01_l_upperarm	 		= 1, 0.6
+bip01_l_forearm	 	 		= 1, 0.6
+bip01_l_hand	 	 		= 1, 0.12
+bip01_r_clavicle	 		= 1, 0.6
+bip01_r_upperarm	 		= 1, 0.6
+bip01_r_forearm	 	 		= 1, 0.6
+bip01_r_hand	 	 		= 1, 0.12
+bip01_l_thigh	 	 		= 1, 0.6
+bip01_l_calf	 	 		= 1, 0.6
+bip01_l_foot	 	 		= 1, 0.12
+bip01_r_thigh	 	 		= 1, 0.6
+bip01_r_calf	 	 		= 1, 0.6
+bip01_r_foot	 	 		= 1, 0.12
+
+;And now we get to the torsos for our variants.
+
+;our ecologist variant won't be made for combat. But let's make those extra plates count for something
+[body_damage_063]
+bip01_pelvis 				= 1, 0.63
+bip01_spine 		 		= 1, 0.63
+bip01_spine1 		 		= 1, 0.63
+bip01_spine2 		 		= 1, 0.63
+bip01_l_clavicle	 		= 1, 0.63
+bip01_l_upperarm	 		= 1, 0.63
+bip01_l_forearm	 	 		= 1, 0.63
+bip01_l_hand	 	 		= 1, 0.125
+bip01_r_clavicle	 		= 1, 0.63
+bip01_r_upperarm	 		= 1, 0.63
+bip01_r_forearm	 	 		= 1, 0.63
+bip01_r_hand	 	 		= 1, 0.125
+bip01_l_thigh	 	 		= 1, 0.63
+bip01_l_calf	 	 		= 1, 0.63
+bip01_l_foot	 	 		= 1, 0.125
+bip01_r_thigh	 	 		= 1, 0.63
+bip01_r_calf	 	 		= 1, 0.63
+bip01_r_foot	 	 		= 1, 0.125
+
+;This is for an average variant, such as the Hatchet
+[body_damage_065]
+bip01_pelvis 				= 1, 0.65
+bip01_spine 		 		= 1, 0.65
+bip01_spine1 		 		= 1, 0.65
+bip01_spine2 		 		= 1, 0.65
+bip01_l_clavicle	 		= 1, 0.65
+bip01_l_upperarm	 		= 1, 0.65
+bip01_l_forearm	 	 		= 1, 0.65
+bip01_l_hand	 	 		= 1, 0.13
+bip01_r_clavicle	 		= 1, 0.65
+bip01_r_upperarm	 		= 1, 0.65
+bip01_r_forearm	 	 		= 1, 0.65
+bip01_r_hand	 	 		= 1, 0.13
+bip01_l_thigh	 	 		= 1, 0.65
+bip01_l_calf	 	 		= 1, 0.65
+bip01_l_foot	 	 		= 1, 0.13
+bip01_r_thigh	 	 		= 1, 0.65
+bip01_r_calf	 	 		= 1, 0.65
+bip01_r_foot	 	 		= 1, 0.13
+
+;this is the Thunderstorm's torso. It's supposed to be a strong combat model so letsa go
+[body_damage_067]
+bip01_pelvis 				= 1, 0.67
+bip01_spine 		 		= 1, 0.67
+bip01_spine1 		 		= 1, 0.67
+bip01_spine2 		 		= 1, 0.67
+bip01_l_clavicle	 		= 1, 0.67
+bip01_l_upperarm	 		= 1, 0.67
+bip01_l_forearm	 	 		= 1, 0.67
+bip01_l_hand	 	 		= 1, 0.135
+bip01_r_clavicle	 		= 1, 0.67
+bip01_r_upperarm	 		= 1, 0.67
+bip01_r_forearm	 	 		= 1, 0.67
+bip01_r_hand	 	 		= 1, 0.135
+bip01_l_thigh	 	 		= 1, 0.67
+bip01_l_calf	 	 		= 1, 0.67
+bip01_l_foot	 	 		= 1, 0.135
+bip01_r_thigh	 	 		= 1, 0.67
+bip01_r_calf	 	 		= 1, 0.67
+bip01_r_foot	 	 		= 1, 0.135
+
+;and this for the Hurricane. it bieg, so we just jump a whole armor tier
+[body_damage_075]
+bip01_pelvis 				= 1, 0.75
+bip01_spine 		 		= 1, 0.75
+bip01_spine1 		 		= 1, 0.75
+bip01_spine2 		 		= 1, 0.75
+bip01_l_clavicle	 		= 1, 0.75
+bip01_l_upperarm	 		= 1, 0.75
+bip01_l_forearm	 	 		= 1, 0.75
+bip01_l_hand	 	 		= 1, 0.14
+bip01_r_clavicle	 		= 1, 0.75
+bip01_r_upperarm	 		= 1, 0.75
+bip01_r_forearm	 	 		= 1, 0.75
+bip01_r_hand	 	 		= 1, 0.14
+bip01_l_thigh	 	 		= 1, 0.75
+bip01_l_calf	 	 		= 1, 0.75
+bip01_l_foot	 	 		= 1, 0.14
+bip01_r_thigh	 	 		= 1, 0.75
+bip01_r_calf	 	 		= 1, 0.75
+bip01_r_foot	 	 		= 1, 0.14
+
+;With Dux's model, the variants' helm looks like an improved Spartan helmet, so
+[head_damage_050]; spartan ; CLASS III +++
+bip01_neck 			 		= 1, 0.50
+bip01_head 			 		= 1, 0.50
+eyelid_1 			 		= 1, 0.50
+eye_left 			 		= 1, 0.50
+eye_right 			 		= 1, 0.50
+jaw_1 		 		 		= 1, 0.50
+
+;and now that we got our new torsos, we modify the base nosorog set
+![actor_armor_class5]:body_damage_055, head_damage_045, !body_damage_045, !head_damage_035
+
+;And another for our non-combat nosorog
+[actor_armor_class5minus]:body_damage_053, head_damage_045
+ap_scale						= 0.7
+
+;goodie. Now we make our custom sets
+;the logical jump in ap_scale would be to 0.6
+[actor_armor_ecolog_nosorog_turtle]:body_damage_063, head_damage_050
+ap_scale						= 0.6
+
+[actor_armor_merc_nosorog_hatchet]:body_damage_065, head_damage_050
+ap_scale						= 0.6
+
+[actor_armor_csnosorog_storm]:body_damage_067, head_damage_050
+ap_scale						= 0.6
+
+[actor_armor_csnosorog_hurricane]:body_damage_075, head_damage_050
+ap_scale						= 0.55
+
+;don't forget the npcs wearing them
+;those hit_fraction_npc are starting to look awfully low though
+[stalker_csnosorog_ecolog]:body_damage_053, head_damage_045
+hit_fraction_npc				= 0.15
+ap_scale						= 0.7
+
+[stalker_csnosorog_turtle]:body_damage_063, head_damage_050
+hit_fraction_npc				= 0.10
+ap_scale						= 0.6
+
+[stalker_csnosorog_hatchet]:body_damage_065, head_damage_050
+hit_fraction_npc				= 0.10
+ap_scale						= 0.6
+
+[stalker_csnosorog_storm]:body_damage_067, head_damage_050
+hit_fraction_npc				= 0.10
+ap_scale						= 0.6
+
+[stalker_csnosorog_hurricane]:body_damage_075, head_damage_050
+hit_fraction_npc				= 0.10
+ap_scale						= 0.55
+
+
+
+[sect_uber_nosorog_outfit_average_immunities]
+burn_immunity                 = 0.009
+chemical_burn_immunity        = 0.0035
+explosion_immunity            = 0.02
+fire_wound_immunity           = 0.0025
+radiation_immunity            = 0.0
+shock_immunity                = 0.0045
+strike_immunity               = 0.0008
+telepatic_immunity            = 0.00
+wound_immunity                = 0.005
+
+[sect_uber_nosorog_outfit_hard_immunities]
+burn_immunity                 = 0.01
+chemical_burn_immunity        = 0.004
+explosion_immunity            = 0.01
+fire_wound_immunity           = 0.0015
+radiation_immunity            = 0.0
+shock_immunity                = 0.005
+strike_immunity               = 0.0004
+telepatic_immunity            = 0.00
+wound_immunity                = 0.002
+
+
+;------ CS nosorogs
+
+; baseline CS-6
+;just a good at most things base nosorog
+[csky_nosorogmk1_outfit]:outfit_base,outfit_restrictions_3
+$spawn                        = "outfit\csky_nosorogmk1_outfit"
+class                         = E_STLK
+ef_equipment_type             = 5
+visual                        = dynamics\outfit\cs_exo_outfit
+actor_visual                  = actors\stalker_nebo\stalker_nebo4nosorog.ogf
+npc_visual                    = actors\stalker_nebo\stalker_nebo4nosorog.ogf
+player_hud_section            = actor_hud_cs_exo
+character_portrait            = ui_inGame2_nosorog
+full_icon_name                = npc_icon_exo_outfit
+full_scale_icon               = 2, 11
+inv_name                      = csky_nosorogmk1_outfit_name
+inv_name_short                = csky_nosorogmk1_outfit_name
+description                   = csky_nosorogmk1_outfit_desc
+icons_texture				  = ui\ui_icon_CSNosorog
+inv_grid_x                    = 0
+inv_grid_y                    = 0
+upgr_icon_path				  = ui\ui_icon_CSNosorog
+upgr_icon_x                   = 200
+upgr_icon_y                   = 150
+upgr_icon_width               = 300
+upgr_icon_height              = 150
+upgrades                      = up_gr_firstab_exolight_1, up_gr_seconab_exolight_1, up_gr_thirdab_exolight_1, up_gr_fourtab_exolight_1, up_gr_fifthab_nosorog_1
+installed_upgrades            =
+upgrade_scheme                = up_scheme_exo_1
+community                     = csky
+kind                          = o_heavy
+cost                          = 205000
+inv_weight                    = 55
+additional_inventory_weight   = 110
+additional_inventory_weight2  = 110
+artefact_count                = 3
+immunities_sect               = sect_nosorog_outfit_immunities
+repair_type                   = outfit_exo
+;repair_part_bonus            = 0.65
+hit_fraction_actor            = 0.2
+bones_koeff_protection        = actor_armor_class5
+control_inertion_factor       = 1.88
+power_loss                    = 0.1
+
+burn_protection               = 0.22
+shock_protection              = 1.6
+radiation_protection          = 0.041
+chemical_burn_protection      = 0.094
+telepatic_protection          = 0.091
+strike_protection             = 0.85
+explosion_protection          = 0.9
+wound_protection              = 0.86
+fire_wound_protection         = 0.6
+
+
+; variant CS-6a Thunderstorm
+;fast, strong, and defensive
+[csky_nosorog_storm_outfit]:csky_nosorogmk1_outfit
+$spawn                        = "outfit\csky_nosorog_storm_outfit"
+actor_visual                  = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6a.ogf
+npc_visual                    = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6a.ogf
+inv_name                      = csky_nosorog_storm_outfit_name
+inv_name_short                = csky_nosorog_storm_outfit_name
+description                   = csky_nosorog_storm_outfit_desc
+inv_grid_x                    = 0
+inv_grid_y                    = 3
+cost                          = 250000
+inv_weight                    = 65
+additional_inventory_weight   = 120
+additional_inventory_weight2  = 120
+immunities_sect               = sect_uber_nosorog_outfit_average_immunities
+hit_fraction_actor            = 0.15
+bones_koeff_protection        = actor_armor_csnosorog_storm
+control_inertion_factor       = 1.99
+
+burn_protection               = 0.27
+shock_protection              = 1.82
+radiation_protection          = 0.0438
+chemical_burn_protection      = 0.104
+telepatic_protection          = 0.103
+strike_protection             = 0.9
+explosion_protection          = 0.95
+wound_protection              = 1.09
+fire_wound_protection         = 0.70
+
+; variant CS-6b Hurricane
+;the "let em come" one
+[csky_nosorog_hurricane_outfit]:csky_nosorogmk1_outfit
+$spawn                        = "outfit\csky_nosorog_hurricane_outfit"
+sprint_allowed					= false
+actor_visual                  = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b.ogf
+npc_visual                    = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b.ogf
+inv_name                      = csky_nosorog_hurricane_outfit_name
+inv_name_short                = csky_nosorog_hurricane_outfit_name
+description                   = csky_nosorog_hurricane_outfit_desc
+inv_grid_x                    = 0
+inv_grid_y                    = 3
+cost                          = 250000
+inv_weight                    = 80
+additional_inventory_weight   = 145
+additional_inventory_weight2  = 145
+artefact_count                = 2
+immunities_sect               = sect_uber_nosorog_outfit_hard_immunities
+hit_fraction_actor            = 0.15
+bones_koeff_protection        = actor_armor_csnosorog_hurricane
+control_inertion_factor       = 1.99
+
+burn_protection               = 0.28
+shock_protection              = 1.97
+radiation_protection          = 0.045
+chemical_burn_protection      = 0.116
+telepatic_protection          = 0.103
+strike_protection             = 0.95
+explosion_protection          = 0.975
+wound_protection              = 1.3
+fire_wound_protection         = 0.75
+
+
+;-------Ecolog nosorogs
+;eco nosorogs are both made to protect from non human threats, but still nosorogs
+
+; baseline ISKRA Nosorog
+[ecolog_nosorog_outfit]:outfit_base,outfit_restrictions_3
+$spawn                        = "outfit\ecolog_nosorog_outfit"
+class                         = E_STLK
+ef_equipment_type             = 5
+visual                        = dynamics\outfit\ecolog_exo_outfit
+actor_visual                  = actors\stalker_ecologist\stalker_eco_nosorog.ogf
+npc_visual                    = actors\stalker_ecologist\stalker_eco_nosorog.ogf
+player_hud_section            = actor_hud_exo
+character_portrait            = ui_inGame2_nosorog
+full_icon_name                = npc_icon_exo_outfit
+full_scale_icon               = 2, 11
+inv_name                      = ecolog_nosorog_outfit_name
+inv_name_short                = ecolog_nosorog_outfit_name
+description                   = ecolog_nosorog_outfit_desc
+icons_texture				  = ui\ui_icon_CSNosorog
+inv_grid_x                    = 0
+inv_grid_y                    = 6
+upgr_icon_path				  = ui\ui_icon_CSNosorog
+upgr_icon_x                   = 200
+upgr_icon_y                   = 300
+upgr_icon_width               = 300
+upgr_icon_height              = 150
+upgrades                      = up_gr_firstab_exolight_1, up_gr_seconab_exolight_1, up_gr_thirdab_exolight_1, up_gr_fourtab_exolight_1, up_gr_fifthab_nosorog_1
+installed_upgrades            =
+upgrade_scheme                = up_scheme_exo_1
+community                     = ecolog
+kind                          = o_heavy
+cost                          = 198000
+inv_weight                    = 53
+additional_inventory_weight   = 115
+additional_inventory_weight2  = 115
+artefact_count                = 3
+immunities_sect               = sect_nosorog_outfit_immunities
+repair_type                   = outfit_exo
+;repair_part_bonus            = 0.65
+hit_fraction_actor            = 0.2
+bones_koeff_protection        = actor_armor_class5minus
+control_inertion_factor       = 1.88
+power_loss                    = 0.1
+
+burn_protection               = 0.22
+shock_protection              = 1.78
+radiation_protection          = 0.0438
+chemical_burn_protection      = 0.105
+telepatic_protection          = 0.091
+strike_protection             = 0.9
+explosion_protection          = 0.87
+wound_protection              = 0.75
+fire_wound_protection         = 0.6
+
+
+; variant ISKRA Turtle Nosorog
+;with extra psi resistance
+[ecolog_nosorog_turtle_outfit]:ecolog_nosorog_outfit
+$spawn                        = "outfit\ecolog_nosorog_turtle_outfit"
+actor_visual                  = actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle.ogf
+npc_visual                    = actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle.ogf
+inv_name                      = ecolog_nosorog_turtle_outfit_name
+inv_name_short                = ecolog_nosorog_turtle_outfit_name
+description                   = ecolog_nosorog_turtle_outfit_desc
+inv_grid_x                    = 0
+inv_grid_y                    = 9
+upgr_icon_x                   = 200
+upgr_icon_y                   = 450
+cost                          = 230000
+inv_weight                    = 59
+additional_inventory_weight   = 123
+additional_inventory_weight2  = 123
+immunities_sect               = sect_uber_nosorog_outfit_hard_immunities
+hit_fraction_actor            = 0.17
+bones_koeff_protection        = actor_armor_ecolog_nosorog_turtle
+
+burn_protection               = 0.37
+shock_protection              = 2.19
+radiation_protection          = 0.0466
+chemical_burn_protection      = 0.125
+telepatic_protection          = 0.11
+strike_protection             = 1.00
+explosion_protection          = 0.90
+wound_protection              = 0.95
+fire_wound_protection         = 0.65
+
+;------ Mercenary
+
+; variant Mercenary Hatchet Nosorog
+;just a jack of all trades
+[merc_nosorog_hatchet_outfit]:merc_nosorog_outfit
+$spawn                        = "outfit\merc_nosorog_hatchet_outfit"
+visual                        = dynamics\outfit\merc_exo_outfit
+actor_visual                  = actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet.ogf
+npc_visual                    = actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet.ogf
+player_hud_section            = actor_hud_exo
+inv_name                      = merc_nosorog_hatchet_outfit_name
+inv_name_short                = merc_nosorog_hatchet_outfit_name
+description                   = merc_nosorog_hatchet_outfit_desc
+icons_texture				  = ui\ui_icon_CSNosorog
+inv_grid_x                    = 0
+inv_grid_y                    = 12
+upgr_icon_path				  = ui\ui_icon_CSNosorog
+upgr_icon_x                   = 200
+upgr_icon_y                   = 600
+upgr_icon_width               = 300
+upgr_icon_height              = 150
+cost                          = 230000
+inv_weight                    = 57
+additional_inventory_weight   = 119
+additional_inventory_weight2  = 119
+immunities_sect               = sect_uber_nosorog_outfit_average_immunities
+hit_fraction_actor            = 0.15
+bones_koeff_protection        = actor_armor_merc_nosorog_hatchet
+control_inertion_factor       = 1.99
+
+burn_protection               = 0.26
+shock_protection              = 1.71
+radiation_protection          = 0.041
+chemical_burn_protection      = 0.1
+telepatic_protection          = 0.103
+strike_protection             = 0.86
+explosion_protection          = 0.95
+wound_protection              = 1.04
+fire_wound_protection         = 0.70

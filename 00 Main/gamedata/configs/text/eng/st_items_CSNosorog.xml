@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	<!-- CS Nosorogs -->
+	<string id="csky_nosorogmk1_outfit_name">
+		<text>CS-6 Nosorog</text>
+	</string>
+	<string id="csky_nosorogmk1_outfit_desc">
+		<text>
+		%c[ui_gray_1]One of Novikov's "little" projects. Clear Sky veterans had raised concerns about the new exoskeleton models fielded by the more well equiped factions. While there is little worry of hostilities with Duty or Freedom, they were troubled by the thought of Spetsnaz squads or unscrupulous mercs encouraged to assault the Great Swamp behind a Nosorog armor, or worse, Monolith cultists finally breaking past the Barrier.\n
+		Calling a favor from friendly merc contacts, the technician got to work into designing an answer to the Nosorogs fielded by other factions. Being last to the race has its own benefits in learning from others's mistakes and successes. But only the most trusted members of the faction are considered for carrying this armor.\n \n
+		</text>
+	</string>
+
+	<string id="csky_nosorog_storm_outfit_name">
+		<text>CS-6a Thunderstorm</text>
+	</string>
+	<string id="csky_nosorog_storm_outfit_desc">
+		<text>
+		%c[ui_gray_1]Scientific goals aside, Clear Sky is still a paramilitary, and the CS-6b Thunderstorm brings their enemies all of the pain and anger they were left with after their disastrous expedition. Trusted to veterans tasked to go as far as the North of the Zone to assault hardened outposts, guard scientific expeditions, or first emergency responders.\n
+		Using anomalous artefacts, the CS-6a has higher protection against weapons and greater speed along an extra belt slot, allowing the wearer to close the distance and bring a their full might to the enemy without significant loss in other aspects, adapting to any situation. The price of being more expensive and resource intensive than other Nosorogs makes hard to move far from base, something alleviated by the company of a squad or scientific team sharing the weight of supplies.\n \n
+		</text>
+	</string>
+	
+	<string id="csky_nosorog_hurricane_outfit_name">
+		<text>CS-6b Hurricane</text>
+	</string>
+	<string id="csky_nosorog_hurricane_outfit_desc">
+		<text>
+		%c[ui_gray_1]The CS-6b Hurricane was made to be Clear Sky's last line of defense, and sees greatly improved protection and carry weight compared to other models. That makes the Hurricane far slower and resource needy, limiting its reach close around a base of operations and requiring a support squad to cover its weaknessess in both range and speed. But its wearer will be able to outlast any of their cousins in a slugfest and carry enough weapons and ammunition to return as much pain as received, guaranteing no invader ever reaches the Hidden Base.\n
+		Involving fewer anomalous materials than the CS-6a, Novikov still has proadly boasted that the wearer would be a match in hand to hand for even a Pseudogiant. No one has voluntered to test that idea and fortunately those terrible mutants are not known to roam that far South.\n \n
+		</text>
+	</string>
+
+	<!-- Eco nosorogs -->
+	<string id="ecolog_nosorog_outfit_name">
+		<text>ISRIT Scientific Nosorog</text>
+	</string>
+	<string id="ecolog_nosorog_outfit_desc">
+		<text>
+		%c[ui_gray_1]An official version of the military Nosorog, originally intended for Army affiliated stalkers, now being provided to trusted guards of the Scientists. Part of the push by the Government to provide the Scientists with more than just military equipment, this suit is made to help Scientists with their expeditions and explorations into The Zone. Despite hiring Stalkers of dubious legality, due protection is required by everyone facing against the dangers of The Zone. \n
+		Despite lacking the ballistic capabilities of other Nosorogs, this suit seeks to provide an adequate amount of protection against all forms of damage while increasing Anomalous and Rupture resistance. \n
+		A snafu on distribution caused the first samples of the outfit to arrive in a plain white. The members of Iskra complained about looking like ambulances, and requested a greenish pattern, so that it could be useful in both wildlife observation and combat.\n \n
+		</text>
+	</string>
+	
+	<string id="ecolog_nosorog_turtle_outfit_name">
+		<text>ISRIT Turtle Nosorog</text>
+	</string>
+	<string id="ecolog_nosorog_turtle_outfit_desc">
+		<text>
+		%c[ui_gray_1]A closer collaboration between Clear Sky and the Ministry of Science. Novikov is a grateful man and hasn't forgotten the time he was given shelter at the Jupiter bunker, so it surprised nobody that he helped the scientists first to develop their own souped up Nosorog. To the quiet jealousy of other factions.\n
+		While lightly armored compared to its equivalents, efforts have been made to allow a guard to accompany their charges in their studies, either as deep as possible into an anomalous area as possible (although not as much as a proper scientific outfit would allow), or take point during a mutant attack. Much to the insistence of Topol, the leader of the Iskra team, it's greatest virtue it's the integrated psi-helmet. Scientists with a guard wearing this armor should feel safer in the event of Controller attacks.\n \n
+		</text>
+	</string>
+
+	<!-- Merc nosorog -->
+	<string id="merc_nosorog_hatchet_outfit_name">
+		<text>Mercenary "Hatchet" Nosorog</text>
+	</string>
+	<string id="merc_nosorog_hatchet_outfit_desc">
+		<text>
+		%c[ui_gray_1]Unlike other improvements on merc outfits, this one only came from Clear Sky in a roundabout way. During his tenure at the Jupiter bunker, Novikov came across Hatchet, whose team was contracted there for security. The merc's friendly attitude earned Hatchet some trust with the Clear Sky technician. Novikov, already busy one day maintaining the merc's Exoskeleton, was able to add improvements to the armour suitable for most combat situations. \n
+		When Dushman started taking over the various merc bands, Hatchet, concerned by the way things were looking, took his team away to work again for the scientists. But a few of his teammates took the information of his exoskeleton to Dushman in hopes of a deal. Novikov, back with Clear Sky, waved away the apologies of the frustrated Hatchet's. There was no big secret lost, and if anything, it gave him a greater interest in making even better armor.\n \n
+		</text>
+	</string>
+	
+</string_table>
