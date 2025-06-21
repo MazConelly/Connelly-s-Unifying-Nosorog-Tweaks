@@ -1,1 +1,109 @@
+![dialogs]
+>files							= dialogs_csnosorog_guard
 
+![profiles]
+>files							= npc_profile_csnosorog_guard
+>specific_characters_files		= character_desc_csnosorog_guard
+
+
+; Clear Sky - Anatoly and his boys
+[csnosorog_guard_anatoly]:stalker_strong
+$spawn				= "respawn\csnosorog_guard_anatoly"
+character_profile	= csnosorog_guard_anatoly
+community			= csky
+story_id			= csnosorog_guard_anatoly
+[csnosorog_guard_kazymyr]:stalker
+$spawn				= "respawn\csnosorog_guard_kazymyr"
+character_profile	= csnosorog_guard_kazymyr
+community			= csky
+story_id			= csnosorog_guard_kazymyr
+[csnosorog_guard_stefan]:stalker
+$spawn				= "respawn\csnosorog_guard_stefan"
+character_profile	= csnosorog_guard_stefan
+community			= csky
+story_id			= csnosorog_guard_stefan
+[csnosorog_guard_petro]:stalker
+$spawn				= "respawn\csnosorog_guard_petro"
+character_profile	= csnosorog_guard_petro
+community			= csky
+story_id			= csnosorog_guard_petro
+[csnosorog_guard_nina]:stalker
+$spawn				= "respawn\csnosorog_guard_nina"
+character_profile	= csnosorog_guard_nina
+community			= csky
+story_id			= csnosorog_guard_nina
+
+
+; Mercenaries - Hatchet and his team
+
+;from configs\creatures\spawn_sections_yantar.ltx
+[yan_merc_goblin]:stalker
+$spawn				= "respawn\yan_merc_goblin"
+character_profile	= yan_merc_goblin
+community			= ecolog
+story_id			= yan_merc_goblin
+[yan_merc_mower]:stalker
+$spawn				= "respawn\yan_merc_mower"
+character_profile	= yan_merc_mower
+community			= ecolog
+story_id			= yan_merc_mower
+
+;from configs\misc\squad_descr\squad_descr_yantar.ltx
+; not quite sure it works. Trying with overwriting squad_descr_yantar.ltx
+; ![yan_bunker_guards_squad]
+; npc = yan_merc_01, yan_merc_02, yan_merc_03, yan_merc_04, yan_merc_05
+; npc_in_squad = 5, 5
+
+
+;Ecologists - Topol and his Iskra team
+[ecolog_iskra_topol]:stalker
+$spawn				= "respawn\ecolog_iskra_topol"
+character_profile	= ecolog_iskra_topol
+community			= ecolog
+story_id			= ecolog_iskra_topol
+[ecolog_iskra_mace]:stalker
+$spawn				= "respawn\ecolog_iskra_mace"
+character_profile	= ecolog_iskra_mace
+community			= ecolog
+story_id			= ecolog_iskra_mace
+[ecolog_iskra_snake]:stalker
+$spawn				= "respawn\ecolog_iskra_snake"
+character_profile	= ecolog_iskra_snake
+community			= ecolog
+story_id			= ecolog_iskra_snake
+[ecolog_iskra_spirit]:stalker
+$spawn				= "respawn\ecolog_iskra_spirit"
+character_profile	= ecolog_iskra_spirit
+community			= ecolog
+story_id			= ecolog_iskra_spirit
+[ecolog_iskra_marshal]:stalker
+$spawn				= "respawn\ecolog_iskra_marshal"
+character_profile	= ecolog_iskra_marshal
+community			= ecolog
+story_id			= ecolog_iskra_marshal
+
+
+; Clear Sky - rookie squad
+[csnosorog_guard_rookie_minder]:stalker
+$spawn				= "respawn\csnosorog_guard_rookie_minder"
+character_profile	= csnosorog_guard_rookie_minder
+community			= csky
+story_id			= csnosorog_guard_rookie_minder
+
+
+
+; Nina's custom gun
+[wpn_mosin_nina]:wpn_mosin
+inv_name                    = st_wpn_mosin_nina
+inv_name_short              = st_wpn_mosin_nina
+description                 = st_wpn_mosin_nina_descr
+inv_weight                  = 3.4
+cost                        = 19560
+installed_upgrades          = up_firsta_mosin, up_firstc_mosin, up_secona_mosin, up_seconc_mosin
+;, up_seconf_mosin
+hit_impulse                 = 45
+hit_power                   = 1.2, 1.2, 1.2, 1.2
+fire_distance               = 1200
+bullet_speed                = 945
+rpm                         = 59
+rpm_empty_click             = 200

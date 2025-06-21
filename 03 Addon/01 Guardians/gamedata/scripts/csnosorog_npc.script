@@ -1,0 +1,128 @@
+-- Bind function actor_on_first_update() to callback "actor_on_first_update"
+function on_game_start()
+	-- Spawns the npcs
+    RegisterScriptCallback("actor_on_first_update",spawn_squad)
+	-- prefetches the models to avoid lag
+    RegisterScriptCallback("on_game_load", prefetch_models)
+end
+
+-- local CNGS = csnosorog_guard_squad
+-- local CNRS = csnosorog_rookie_squad
+
+function spawn_squad()
+	-- Swamp Guardians, at Fishing Hamlet.
+    -- Check if having info "csnosorog_guard_init"
+    if not has_alife_info("csnosorog_guard_init") then
+        -- Check if squad does not exist.
+        if not get_story_se_object("csnosorog_guard_squad") then
+            -- Get smart terrain "mar_smart_terrain_5_12" Fishing hamlet
+            local smart = SIMBOARD.smarts_by_names["mar_smart_terrain_5_12"]
+            -- Spawn squad "csnosorog_guard_squad"
+            local squad = SIMBOARD:create_squad(smart,"csnosorog_guard_squad")
+        end
+        -- Check if squad exist (spawned successfully).
+        if get_story_se_object("csnosorog_guard_squad") then
+            -- Give info so the game won't spawn another squad every time loading a save file.
+            give_info("csnosorog_guard_init")
+        end
+    end
+
+    -- Rookie squad, at Hidden Base
+    if not has_alife_info("csnosorog_rookie_squad_init") then
+        if not get_story_se_object("csnosorog_rookie_squad") then
+            local smart = SIMBOARD.smarts_by_names["mar_smart_terrain_base"]
+            local squad = SIMBOARD:create_squad(smart,"csnosorog_rookie_squad")
+        end
+        if get_story_se_object("csnosorog_rookie_squad") then
+            give_info("csnosorog_rookie_squad_init")
+        end
+    end
+	
+	-- Iskra team, at Jupiter Checkpoint
+	-- or how about the complex, making them clean it of zombies? jup_b205_smart_terrain
+	-- or cement factory jup_b200
+		-- actually, lets send them to agroprom, as if before finding the chemical plant agr_smart_terrain_4_4
+    if not has_alife_info("ecolog_iskra_squad_init") then
+        if not get_story_se_object("ecolog_iskra_squad") then
+            local smart = SIMBOARD.smarts_by_names["agr_smart_terrain_4_4"]
+            local squad = SIMBOARD:create_squad(smart,"ecolog_iskra_squad")
+        end
+        if get_story_se_object("ecolog_iskra_squad") then
+            give_info("ecolog_iskra_squad_init")
+        end
+    end
+
+end
+
+--That many NPCs, maybe prefetching their models would help avoid lag/stutter?
+function prefetch_models()
+    game.prefetch_model([[actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b.ogf]])
+    game.prefetch_model([[actors\stalker_nebo\stalker_nebo_skat.ogf]])
+    game.prefetch_model([[actors\stalker_nebo\stalker_nebob2.ogf]])
+    game.prefetch_model([[actors\stalker_nebo\stalker_neboa2.ogf]])
+    game.prefetch_model([[actors\stalker_nebo\stalker_nebo_seva_3.ogf]])
+    game.prefetch_model([[actors\stalker_nebo\stalker_nebo3a.ogf]])
+    game.prefetch_model([[actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle.ogf]])
+    game.prefetch_model([[actors\stalker_ecologist\stalker_eco_nosorog_mk1.ogf]])
+    game.prefetch_model([[actors\stalker_soldier\stalker_soldier_9_proto.ogf]])
+    game.prefetch_model([[actors\stalker_neutral\stalker_neutral_nauchniy.ogf]])
+    game.prefetch_model([[actors\stalker_nebo\stalker_nebo3a.ogf]])
+    game.prefetch_model([[actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet.ogf]])
+    game.prefetch_model([[actors\stalker_merc\stalker_merc4a.ogf]])
+    game.prefetch_model([[actors\stalker_merc\stalker_merc_medic_2.ogf]])
+    game.prefetch_model([[actors\stalker_merc\stalker_merc_military.ogf]])
+    game.prefetch_model([[actors\stalker_merc\stalker_mercenary3.ogf]])
+end
+
+
+
+-- --- Imports 
+
+-- local get_sim_board = sim_board.get_sim_board
+
+-- local has_alife_info = has_alife_info
+-- local give_info = give_info
+
+-- --- Utility Functions
+
+-- function not_has_alife_info(str)
+    -- return not has_alife_info(str)
+-- end
+
+-- function csnosorog_guard_init()
+    -- printf("CS Nosorog Guard Init")
+    -- local board = get_sim_board()
+
+    -- if not_has_alife_info("csnosorog_guard_init") then
+        -- printf("  Not previously initialized, initializing...")
+
+        -- if not (get_story_se_object("csnosorog_guard_squad")) then
+            -- printf("  Squad not spawned, spawning...")
+
+            -- local smart = board.smarts_by_names["mar_smart_terrain_base"]
+            -- printf("  Smart terrain: %s", smart)
+
+            -- local squad = board:create_squad(smart,"csnosorog_guard_squad")
+            -- printf("  Spawned Squad: %s", squad)
+        -- end
+
+        -- local story_obj = get_story_se_object("csnosorog_guard_squad")
+        -- if story_obj then
+            -- printf("  Spawned successfully, setting flag...")
+            -- give_info("csnosorog_guard_init")
+         -- else
+            -- printf("  WARNING: Spawn failed.")
+        -- end
+    -- end
+-- end
+
+-- --- Entrypoint
+
+-- function actor_on_first_update()
+    -- printf("CS Nosorog: First Update")
+    -- csnosorog_guard_init()
+-- end
+
+-- function on_game_start()
+    -- RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+-- end

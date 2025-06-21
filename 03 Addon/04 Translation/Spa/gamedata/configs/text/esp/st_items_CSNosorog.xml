@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	<!-- CS Nosorogs -->
+	<string id="csky_nosorogmk1_outfit_name">
+		<text>CS-6 Nosorog</text>
+	</string>
+	<string id="csky_nosorogmk1_outfit_desc">
+		<text>%c[ui_gray_1]Uno de los "pequenos" projectos de Novikov. Veteranos de Clear Sky mostraron preocupacion por los nuevos modelos de exoskeleto equipados por facciones mas pudientes. Aunque la posibilidad de hostilidades con Duty o Freedom es escasa, se mostraron preocupados por la idea de esquadrones de Spetsnaz o mercenarios sin escrupulos envalentonados en asaltar el Gran Pantano siguiendo a una armadura Nosorog, o peor, cultistas de Monolith atravesando al fin la Barrera.\n
+		Como favores de contactos amistosos en los mercenarios, el tecnico se puso manos a la obra en disenar una respuesta a estos Nosorogs. Llegar ultimo a la meta tiene sus beneficios en aprender de los errores y exitos de otros. Pero solo a los miembros con mas confianza en la faccion se les considerara para llevar esta armadura.\n \n
+		</text>
+	</string>
+
+	<string id="csky_nosorog_storm_outfit_name">
+		<text>CS-6a Tormenta</text>
+	</string>
+	<string id="csky_nosorog_storm_outfit_desc">
+		<text>%c[ui_gray_1]Metas cientificas a un lado, Clear Sky es un grupo paramilitar, y el CS-6b Tormenta lleva a sus enemigos todo el dolor y la rabia con que se quedaron tras su destastrosa expedicion. Confiada a veteranos encargados de ir tan lejos como el Norte de la Zona para asaltar puestos fortificados, guardar expediciones cientificas, o como primera respuesta a emergencias.\n
+		Usando artefactos anomalos, el CS-6a posee una major proteccion contra armas de fuego y una major velocidad de moviimento junto a un puesto en el cinturon extra, permitiendo a quien lo lleva cerrar distancias y llevar toda su potencia contra el enemigo sin ninguna perdida en otros aspectos, adaptandose a cualquier situacion. El precio siendo mas caro e intensivo en recoursos que otros Nosorogs hace dificil moverse lejos de una base, algo aleviado con la compania de un escuadron o un equipo cientifico que comparta el peso de los recursos necesarios.\n \n
+		</text>
+	</string>
+	
+	<string id="csky_nosorog_hurricane_outfit_name">
+		<text>CS-6b Huracan</text>
+	</string>
+	<string id="csky_nosorog_hurricane_outfit_desc">
+		<text>%c[ui_gray_1]El CS-6b Huracan esta hecho para ser la ultima linea de defensa de Clear Sky, y posee una resistencia y capacidad de carga enormemente mejorado comparado a otros modelos. Esto hace al Huracan moverse mucho mas lento y necesitar mas recoursos, limitando su alcance a las cercanias de una base de operaciones y requiriendo el soporte de unequipo para cubrir sus debilidades en rango y velocidad. Pero quien lo lleve sera capaz de sobrevivir mejor que otros Nosorogs al tiroteo mas intenso, y cargar con suficiente armamento para devolverlas con creces, garantizando que nadie alcance la Base Escondida.\n
+		Implementando una menor cantidad de materiales anomalos que el CS-6a, Novikov ha alardeado de que que quien lleve el Huracan es capaz de enfrentarse mano a mano con un Pseudogigante. Nadie se ha ofrecido para probar esa idea, y afortunadamente no se conoce que esos terribles mutantes se paseeen tan lejos hacia el Sur.\n \n
+		</text>
+	</string>
+
+	<!-- Eco nosorogs -->
+	<string id="ecolog_nosorog_outfit_name">
+		<text>ISRIT Nosorog Cientifico</text>
+	</string>
+	<string id="ecolog_nosorog_outfit_desc">
+		<text>
+		%c[ui_gray_1]Una variante oficial del Nosorog militar, pensado originalmente para stalkers afiliados con el ejercito, ahora proporcionado a guardias de confianza de los cientificos. Parte del esfuerzo guvernamental de proveer a sus investigadores con mas que simple material militar, esta armadura esta pensada para ayudar en exploraciones y estudios de campo en la Zona. A pesar de contratar a stalkers de dudosa legalidad, la debida proteccion es requerida para todo aquel enfrentandose a los peligros de la Zona. \n
+		A pesar de carecer la resistencia balistica de otros Nosorogs, esta version busca proveer una proteccion adecuada contra todo peligro, incrementando su resistencia a danos de Ruptura y Anomala.
+		Un problema de distribucion causo que las primeras muestras llegaran en un blanco total. Los miembros de Iskra se quejaron de parecer ambulancias, y han pedido un patron mas verde, que pueda ser util tanto para observar la vida silvestre y para combate.
+		</text>
+	</string>
+	
+	<string id="ecolog_nosorog_turtle_outfit_name">
+		<text>ISRIT Nosorog Tortuga</text>
+	</string>
+	<string id="ecolog_nosorog_turtle_outfit_desc">
+		<text>
+		%c[ui_gray_1]Una colaboracion mas cercana entre Clear Sky y el Ministerio de Ciencia. Novikov es un hombre que sabe ser agradecido y no olvido el tiempo que se le dio cobijo en el bunker de Jupiter. Asi que no sorprendio a nadie que ayudara primero a los cientificos en desarrollar su propio Nosorog mejorado. Para la envidia silenciosa de otras facciones.\n
+		Aunque es una armadura mas ligera que otras variantes, se hizo un esfuerzo en permitir que un guardia acompanara a sus cargos en sus estudios, ya sea tan lejos como fuera posible en un area anomala (aunque no mas de lo que un traje cientifico apropiado podria permitir), o en primera linea de defensa contra un ataque mutante. A la insistencia de Topol, el lider del equipo Iskra, su mayor virtud es su psi-casco integrado. Cientificos con un guardia llevando esta armadura deberia sentirse much mas seguro en case de que un Controlador atacase.\n \n
+		</text>
+	</string>
+
+	<!-- Merc nosorog -->
+	<string id="merc_nosorog_hatchet_outfit_name">
+		<text>Nosorog Mercenario "Hatchet"</text>
+	</string>
+	<string id="merc_nosorog_hatchet_outfit_desc">
+		<text>
+		%c[ui_gray_1]A diferencia de otros trajes para mercenarios mejorados por Clear Sky, este llego de manera indirecta. Durante su tiempo en el bunker de Jupiter, Novikov conocio a Hatchet, cuyo equipo fue contratado como seguridad. La actitud amistosa del mercenario le gano una confianza con el tecnico de Clear Sky. Novikov, ya ocupado un dia en mantener el exoeskeleto de Hatchet, fue capaz de anadir mejoras adecuadas para la mayoria de situaciones de combate.\n
+		Cuando Dushman empezo a reunir las diferentes bandas mercenarias bajo su mando, Hatchet, preocupado por la forma que iba tomando el asunto, se llevo a su equipo de vuelta a trabajar para los cientificos. Pero algunos de sus companeros se llevaron la informacion de su exoeskeleto a Dushman para negociar con ello. A Novikov, ya de vuelta con Clear Sky, le preocupo poco cuando el frustrado Hatchet se disculpo. No habia ningun gran secreto perdido, y si acaso, le da un major interes en crear armaduras aun mejores.\n \n
+		</text>
+	</string>
+	
+</string_table>

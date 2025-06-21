@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+<!-- Names -->
+	<!-- Clear Sky - Anatoly and his boys -->
+	<string id="csnosorog_guard_anatoly">
+		<text>Anatoly Gritzaenko</text>
+	</string>
+	<!-- Kazymyr -->
+	<string id="csnosorog_guard_kazymyr">
+		<text>Kazymyr Vlasyuk</text>
+	</string>
+	<!-- Stefan -->
+	<string id="csnosorog_guard_stefan">
+		<text>Stefan Omelchuk</text>
+	</string>
+	<!-- Petro -->
+	<string id="csnosorog_guard_petro">
+		<text>Petro Hrytsenko</text>
+	</string>
+	<!-- Nina -->
+	<string id="csnosorog_guard_nina">
+		<text>Nina Palij</text>
+	</string>
+	<!-- Nina's Mosin -->
+	<string id="st_wpn_mosin_nina">
+		<text>Nina's Mosin</text>
+	</string>
+	<string id="st_wpn_mosin_nina_descr">
+		<text>An old Mosin Nagant rifle. Both wood and metal are obviously well cared and maintained despite the old signs of tear and wear, marking this not only as an old memento but a very real relic with some history. The more practical upgrades done to improve its performance are also clear to anyone to see, but the craftmanship is excellent.
+		</text>
+	</string>
+	
+	<!-- Mercenaries - Hatchet and his team -->
+	<string id="yan_merc_goblin">
+		<text>Goblin</text>
+	</string>
+	<string id="yan_merc_mower">
+		<text>Mower</text>
+	</string>
+	
+	<!-- Ecologists - Topol and his Iskra team -->
+	<string id="ecolog_iskra_topol">
+		<text>Topol</text>
+	</string>
+	<string id="ecolog_iskra_mace">
+		<text>Mace</text>
+	</string>
+	<string id="ecolog_iskra_snake">
+		<text>Snake</text>
+	</string>
+	<string id="ecolog_iskra_spirit">
+		<text>Spirit</text>
+	</string>
+	<string id="ecolog_iskra_marshal">
+		<text>Marshal</text>
+	</string>
+
+<!-- Dialog -->
+<!-- Minder's call -->
+	<string id="csnosorog_guard_rookie_minder_initialize">
+		<text>Alright, all the volunteers for Anatoly's training, gather around me, and let's move!</text>
+	</string>
+
+<!-- Anatoly's introduction -->
+	<string id="csnosorog_guard_anatoly_ask_story_0">
+		<text>Pardon me for asking, hope you don't mind but that's one hell of an armor set. Where the hell did you get it? It doesn't look like anything we have... the camo looks slightly different too! Looks like a custom job. It's fascinating, really.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_1">
+		<text>Hah! You wouldn't be the first to ask. It's a custom job in a way, yes. Novikov made it, I'm sure you know him? The Clear Sky senior technician? Anyways, he calls this the CS-6b Hurricane. Apt name, I'm telling you. It's one hell of a beast and quite the force of nature! At least it makes me feel like one ha! It's an improved Nosorog and don't be deceived by the looks! It weighs more than you realise. A bit uncomfortable but it's a worthy trade-off for all the bells and whistles it has. The CS-6a model, or Thunderstorm, is probably better. They trade some protection for speed, but they use a lot on anomalous materials.\n \n
+		I'm more a mutant hunter and jarhead, so I was a bit light on artefacts to provide when I voluntered for the test runs. Still! I'm carrying enough armor to be the considered the safest man in The Zone! And I could take an entire base in this armor. It's probably why they asked me to head the main patrol, or a "mobile boot camp" as I like to call it. Heh.</text>
+	</string>
+
+	<string id="csnosorog_guard_anatoly_ask_story_2">
+		<text>You don't sound like the rest of Clear Sky members.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_3">
+		<text>Shit... has my diction suffered that bad? Well, I was with Duty before. Senior Sergeant Anatoly Gritzaenko, at your service. Call me Sir from now on... hah! Not really. Before you ask, no, I didn't leave on bad terms. Me and my team were in a bad spot, and a Clear Sky squad saved our asses. Mind you, this was after whatever happened that decimated the entire faction at the power plant.\n \n
+		It felt a bit awkward that it was them who saved our asses, so I had a talk with General Voronin. Clear Sky and Duty might not see eye to eye on everything, but you could have much worse neighbours. I took my stuff, and later I was at Cold's door to offer my help and support. Now I'm the main pest control man here, and the drill sergeant for the sorriest bunch the man sends my way, hah!\n \n
+		Ah, it's not that much of a profesional outfit like Duty, but it's not so bad. Secretive or not, Clear Sky seem to attract people with decent heads on their shoulders; the veterans and even the eggheads are dependable and know how to live in the swamp better than anyone; the swamps themselves are good training grounds, and whatever we get to teach the boys seem to stick long enough to help them survive longer. Even this far south, it isn't unheard of for the Zone to devour trained people, let alone the rookies I've to deal with.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_4">		
+		<text>Wouldn't you prefer a more... you know, active job? Especially with that armor! From what I have heard and seen of Duty, your people are somewhat aggressive.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_5">
+		<text>Agressive? It's more of a "Be aware at all times" type of mentality, and really, it's a necessity in the Zone. Though I guess I can see how we can get that reputation, but I'd like to think we aren't reckless as others tend to be, certainly not like those lousy Freedom pricks. Remember, we strive for discipline.\n \n
+		Anyway, to answer your question, there are a few reasons why I don't do that. One, I'm getting a bit old to go stick my nose where I'm not supposed to, at least without a plan first. Second, gallivanting around makes a bit hard to be a contact if Voronin sends someone here, right? And last, honestly, I just like training and drilling the guys, it's something I do fine. If that's how I can help the most, then I'm glad to do it.\n \n
+		Oh, and the armor is so heavy it makes the servos suck batteries faster than a vortex anomaly sucks you in. It isn't too bad when things are calm, but I can't afford to get distracted once the shit starts flying. And the batteries are hefty. We carry some extras when in patrol; that crap makes good weight for endurance training. But unlike normal exos and nosorogs, long range travel isn't really practical for this model, so we have to make a trek to and fro the base regularly to refuel and restock. Trust me, it isn't as boring or bad as it sounds. Actually, it guarantees I'm always close to base to help repel an attack. It hasn't happened yet, but you know how those renegade fucks keep trying. I can't imagine what the old guard did to those shitbags to make them this obsessed...</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_6">
+		<text>Wow, I didn't expect that when I first caught sight of you. You seem to have adjusted quite well here already which is crazy! To come from Duty, with such an high octane life to such a static offering here, in The Swamps, as a Clear Sky stalker... I do wonder, don't you miss Duty?</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_7">
+		<text>I do miss Duty, of course. All the people, whom I still consider my brothers, and that bond we share. Our heart's embers entwined as one, forged through fire and struggle. But these are also my boys, I helped shape them up myself; and their research helps everyone just as much as that of the scientists from the Ministry of Science.\n \n
+		In any case, no, I'm not leaving my boys. Missing something you were once a part of is given, it's a part of life. And life comes with change, and you must adapt to it if you must stay sane; The Zone demands change in one way or another at every step of the way and I've come to terms with that. It was my choice to join Clear Sky, but I try to not think of it as leaving Duty, but as building bridges and helping a friendly bunch. We really need more of that around here, don't you think?\n \n
+		By the way, we're a big group, but we can take one more, if you're interested in the training? You'll find me and the boys here, as usual, so let me know if you want to join one of our training sessions some day. Be safe, stalker and good hunting. Don't get lost to the Zone!</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_8">
+		<text>You too, sergeant. Stay safe and good luck with your training. It was nice talking to you, I'll get back at you again some day when we cross paths once more. Farewell.</text>
+	</string>
+
+
+
+<!-- Hatchet's introduction -->
+	<string id="csnosorog_guard_hatchet_ask_story_0">
+		<text>
+		You're the boss of the guards here? I saw those army guys at the bunker, but you guys don't look like them.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_1">
+		<text>
+		Correct, we're contractors. They call me Hatchet, and you'll see my team posted around, making sure the bunker is nice and safe for the Ministry's eggheads. Some of them can take care of themselves, you may see Professor Kruglov on a stroll on his own and with no fucks to give, but this place can go to hell in any moment. Something about the hidden lab at the factory attracting muties, or worse.\n \n
+		You can also find our boys at the Jupiter bunker, or escorting scientific expeditions to wherever's needed, just providing security where the Government can't. Please do me a favor, and let them be? They're not the most well mannered people, but trying to keep things peaceful in the Zone isn't for the faint of heart.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_2">
+		<text>
+		Your boys...? You're not with the rest of mercs?
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_3">
+		<text>
+		Damn, that's one hell of a question, kid. You haven't been long around, have you? Yeah, I can see the green in you, don't try to hide it. Don't worry, I won't tell your mama you're running around here...\n \n 
+		Hmm, things seem calm enough for now, I guess I can spare a minute. So, maybe you've heard that years ago, we mercs were just a bunch of unconnected bands. All of us here more or less for the same reasons. Too rowdy for work at the Mainland, promises of good cash to be made, no real laws... Frankly, it'd be rare the merc who hadn't done something unsavory, myself including. But there were every kind. Hog and his team were standoffish, but you could talk to them without him blowing your head off. Or this one guy, Scar; real good at what he did, but bit of a weirdo, probably why he worked alone as a guide. Then there were the real pieces of work like Wolfhound, the fucking sicko. Pah.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_4">
+		<text>No love lost, I'm guessing.</text>
+	</string>
+		
+	<string id="csnosorog_guard_hatchet_ask_story_5">
+		<text>Pretty sure the bastard played with himself thinking about who'd he get to slaughter next. I'm no choir boy, I admit that, but I don't play with my food. Eyes on the target, use your bullets with your brain instead of your dick, make it quick, and hopefully me and everyone else can leave each other alone, at worst.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_6">
+		<text>Quite reasonable for a gun for hire.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_7">
+		<text>
+		Heh, I've heard less diplomatic words than that before. I don't fancy the idea of looking every day behind my shoulder. I don't know, I came from Armenia just looking for work; you have to be willing to end up with a target on your back in this profession, but that's no reason to go out of my way to antagonize the entire Zone. Or could be the age catching up. Either or.\n \n
+		Anyway, me and my team, we were just one cog in Jackal's group. Man had the contacts, the deals, and the know-how. So plenty of us flocked to him. Not that we were under any illusion the man was meeting with angels or anything. Then a funny thing happens. One day in the middle of a job, me and my team found ourselves at a dead end in Zaton, no supplies, no friendlies around. This one stalker shows up and shares his food. Carries himself in a way that makes me think military. We chat a bit, he digs some tools from the place, and leaves. Just a trash digger down on his luck, I thought. All the while Jackal had his second, Black, monitor the Jupiter bunker to disrupt the eggheads' work and steal their research. Now, this is one kind of asshole who wasn't interested in making friends.\n \n
+		So, our trash digger strolls there, leaves to recover some document, and Black's team dissapears. A day later the guy returns to the bunker with the docs, saying they need a new security team. Turns out he was, no shit, a USS agent, and Black bit more than he could chew.\n \n
+		So hey, Jackal's a no-show, we got nothing to do, might as well take the job. Hermann could do without the corncob living rent free up his ass. But the other researchers were pretty agreeable once they opened up to us, and that Iskra team they just formed were pretty receptive to some corrective training. Novikov, their tecnician back then, seemed pretty down, but we became friendly easily enough. He turned my exoskeleton into what you're seeing me wear now. All in all, an enjoyable post.\n \n
+		Well, a week after that I get word Jackal's pushing daisies in the middle of Pripyat. One guess as to whom the rest of the band came looking for half a clue about what to do.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_8">
+		<text>All of them? Were they that many?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_9">
+		<text>Eh, after all the loses, we still were sizable enough to be a band, but it was far from an army if that's what you're thinking.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_10">
+		<text>All that's very interesting, but I'm not sure I see what it has to do with the rest of mercenaries.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_11">
+		<text>Getting to that. So I find myself with more people looking up to me for orders than I knew what to do with. And then I start hearing about someone's calling all bands to gather the Dead City and settle some matters about our service to our "shared client". Don't ask. Some of the guys want to go; not like a single bunker needed that many guards. But something was smelling fishy about all that. Still, figured I should go and see what's up. Didn't want to break the contract with the scientists, so I left the stragglers there while me and the team traveled to the Dead City as our representative.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_12">
+		<text>And you didn't like what you found there?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_13">
+		<text>I didn't. Not that anything dramatic happened, at least then. Dushman and his band had started taking over all others, with some excuse of better organization. Which was all fine and dandy, but before he had asked oh so politely to talk with bands like mine, he took others by force.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_14">
+		<text>It wasn't a negotiation, it was a show of force. He didn't need to take over yours by force if he demonstrated it wouldn't be much work for him.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_15">
+		<text>Got it in one. So I did what I do best. Smile politely and back out slowly, say I would talk it with the rest of the guys, and started hoofing it back to Jupiter once they lost sight of my butt.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_16">
+		<text>And now you work exclusively for the ecologists?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_17">
+		<text>Figured it'd be our best choice. We just got rid of two assholes in our leadership, I wasn't in the mood to find out the quality of Dushman's character, and most of the others seemed content with me calling the shots. And while the Ministry of Science doesn't pay as much, it is a steady and easy paycheck. That, and it makes much easier to cross to the Mainland once we have enough of the Zone, maybe with recommendation letters. They appreciate the idea.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_18">
+		<text>And Dushman didn't mind?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_19">
+		<text>Well, I may be misreading the stink eye he gives me when we see each other. But I think the fact that he ordered all clandestine routes under his control to be closed to me gives me a hint of what kind of thoughts he might have about me. I'm sure he was expecting to have me keep tabs on the scientists for him. Too bad. He already got his pound of flesh anyway. Two of my then teammates went back and sold him the schematics of my suit. May all three of them choke on their money.\n \n
+		Now you know what's the difference between our groups. It's not like his people and mine start a shootout when they cross paths, but you may notice some tension. And not the sexual kind.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_20">
+		<text>Dare I ask...?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_21">
+		<text>Rostok, Bar 100, happy hours on sundays. If you can't hook up with someone then, the Barkeep can get anything, you can ask him for company. Just don't ask for women, those who come to the Zone don't do it to prostitute themselves.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_22">
+		<text>Huh, ok, that's... not exactly what I had in mind.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_23">
+		<text>(Hatchet slaps your shoulder lightly, an impressive show of control considering what he's wearing)\n \n
+		Lighten up, kid, I'm just joking, happy hours is thursday. But our minute is up, and this place won't patrol itself. If you need anything, you better take it up with the army boys or the good doctor. Stay safe out there, but don't hesitate to come back, as long as I'm not on duty I'm good for a chat.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_24">
+		<text>I might. Thanks for your time and the story, Hatchet. Stay safe you too.</text>
+	</string>
+
+	
+<!-- Topol's introduction -->
+
+	<string id="csnosorog_guard_topol_ask_story_0">
+		<text>
+		Ah, didn't know there was someone occupying the place.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_1">
+		<text>
+		It's fine, pal. Come on in, we're only here for a short while for some impromptu research.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_2">
+		<text>Research? You don't look like scientists, with that armor.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_3">
+		<text>Sure we are, baby. We're Iskra. Surely you've heard of us.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_4">
+		<text>Can't say I did.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_5">
+		<text>Really? You must be real green. Haven't you seen any ecologist teams around? We're all Iskra. Iskra Scientific Research and Investigation Team, if you want to get formal.\n \n
+		Or Spark, if like Snake over there you want to get "international".\n \n
+		(He raised his voice for that last bit. You think you hear a mumble at some distance)\n \n
+		Nah, we like how Spark sounds. We just like to tease Snake a bit too for the idea. Name's Topol, nice to meet you.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_6">
+		<text>So what? You're all... action scientists?
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_7">
+		<text>Ha! Action scientists. I'm stealing that, hope you don't mind. Spirit will love it.\n \n
+		Well, but not all of us are scientists. I do happen to almost have gotten a degree, but I uh, went into the Zone before it happened. If you see someone in one of those HAZMAT suits, sure, probably they're. At least with a diploma and a permit from the government, if that's how you care to define a scientist. There are also some profesional guards sent from the Mainland, and you may also see some of Hatchet's men acting security; a decent bunch for mercs, but don't expect them to talk to you, at least not at first.\n \n
+		Most of us though were your run off the mill stalkers before joining. The scientists employed plenty of stalkers in the past, sure, but our team was the first to really stick with them. We ran odd jobs for the guys at the Jupiter bunker, until finally Doctor Ozersky managed to convince the higher ups that we were useful enough to keep around.\n \n
+		And that's how four men with stubble in the face gave birth to a little girl, and called her Iskra!
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_8">
+		<text>Questionable imagery aside. And they give you gear of this level? What you wear looks like some science fiction army would carry to war.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_9">
+		<text>Yeah, this armor is... sort of an allowance? From the army. Nosorogs are not the sort of things you give to grunts, so they're not happy to lend it to the Ministry of Science, but they can't really complain. As I said, we've made ourselves real useful since 2012.\n \n
+		We don't do warfare, mind. Sure, I think by now we can rock the house with the best, and all teams will probably have to step up once the mercs leave. But we got these outfits tweaked with help from Clear Sky for exploration. Me or Mace are better protected from anomalies than probably any other man around, short of a real HAZMAT suit or a SEVA, and we could take a couple hits from an enraged chimera... probably. Let's not test that. Enraged chimeras? Not a pretty thing to see go off.\n \n
+		We did test the improved psi-resistance in my Turtle's modified helmet. Psi-protection level five, baby. That one controller got a nasty surprise when I ignored his tricks. Real, real nasty.\n \n
+		... Ok, yes, I have issues with controllers. Everyone does, you don't need to give me that look.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_10">
+		<text>Right. But all this sounds like you're in the state's payroll... I would have thought that wouldn't be a thing, what with stalkers being considered ilegal.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_11">
+		<text>I mean, illegal or not, we are cooperative, we're tough and know our way around, and they gotta follow some safety protocols, if only to ensure we get the job done, right? And in exchange we get our papers sorted out to eventually come back to the Mainland all nice and easy. Eventually. They do take their sweet time.\n \n
+		Ah, I guess they consider it a way to pay our dues. After all, from their perspective, they could see our situation at the Zone not unlike prison work. The work of course being among the five most dangerous in the world, not a sweatshop inside a prison complex.\n \n
+		Wait. That's probably not exactly a nice work either. Mouth, meet boot...\n \n		
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_12">
+		<text>Still, that's a better deal than what most stalkers get.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_13">
+		<text>It's a stable deal, that much I can tell you. And it comes with permission to experience all the beauty of the Zone without worrying about the army or the faction and their skirmishes. Or mut- No. Not gonna jinx that now.\n \n
+		Except bandits, but we've learned to spank them good. And Monolithians. Now they scare me a bit. But we can fight off the odd group that we find scouting the northern areas.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_14">
+		<text>Sounds like the south here isn't... too exciting for you guys.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_15">
+		<text>You kidding? No, no, we love it here too. Anomalies at the south seem to act differently from the north. At the north they tend to be all grouped up in small concentrated fields. Very neatly packed. Here at the south is all the other way around, and even more chaotic. There are some theories about why, but more importantly, there's always a need to have someone take some readings and observations. Even in a place as boring as the Cordon.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_16">
+		<text>Sure, but a team like yours? You could probably send someone else.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_17">
+		<text>There's something. Marshal, our newbie, had a hunch. Well, he's certain, but we're downgrading it to hunch. He swears he's found a way to get to the old chemical plant nearby. Which could be pretty interesting, see how the place has been doing all these years of isolation. We had a job from doc Sakharov taking us nearby, and Spirit took a liking to the kid if you catch my drift, so we've been hanging around for a bit and see if there's something to that. No luck though. Oh well. Sometimes you don't find anything. It'll be a good thing for Marshal to learn.\n \n
+		Anyway, feel free to hang around, the guys will be chill with you as long as you keep the peace. Just don't touch the equipment, it takes a while to calibrate. Or worse, taking it to the Yantar bunker. Even worse, all the way back to Jupiter... And if you're leaving, be safe, buddy.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_18">
+		<text>You too, Topol, and good luck with your research.
+		</text>
+	</string>
+
+
+</string_table>

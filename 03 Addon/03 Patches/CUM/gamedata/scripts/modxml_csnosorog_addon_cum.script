@@ -1,0 +1,34 @@
+function on_game_start()
+    RegisterScriptCallback("on_specific_character_init", function(character_id, data)
+
+        if character_id == "csnosorog_guard_stefan" then
+            data.visual = "actors\\stalker_nebo\\stalker_cs_light_exo"
+        end
+
+        if character_id == "csnosorog_guard_petro" then
+            data.visual = "actors\\stalker_nebo\\stalker_cs_proto_seva"
+        end
+
+        if character_id == "csnosorog_guard_nina" then
+            data.visual = "actors\\stalker_nebo\\stalker_cs_proto_seva"
+        end
+
+        if character_id == "ecolog_iskra_spirit" then
+            data.visual = "actors\\stalker_neutral\\stalker_neutral_proto_seva"
+        end
+-- Not really from CUM, buy hey
+        if character_id == "ecolog_iskra_marshal" then
+            data.visual = "actors\\stalker_ecologist\\stalker_ecologist_proto"
+        end
+
+        if character_id == "yan_merc_03" then
+			data.icon	= "ui_inGame2_mercenary3"
+            data.visual = "actors\\stalker_merc\\stalker_merc_proto_seva"
+        end
+
+        if character_id == "yan_merc_goblin" then
+            data.visual = "actors\\stalker_merc\\stalker_merc_light_exo"
+        end
+
+    end)
+end

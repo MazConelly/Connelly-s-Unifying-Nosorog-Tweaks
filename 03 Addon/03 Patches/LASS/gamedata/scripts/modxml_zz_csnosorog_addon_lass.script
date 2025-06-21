@@ -1,0 +1,8 @@
+function on_game_start()
+    RegisterScriptCallback("on_specific_character_init", function(character_id, data)
+        if character_id == "csnosorog_guard_nina" then
+			data.icon	= "ui_inGame2_nosorog"
+            data.visual = "actors\\o_nosrog\\stalker_f_nebo_nosrog"
+        end
+    end)
+end
