@@ -1,0 +1,8 @@
+<!-- extra females -->
+<!-- 1 Hatchet -->
+<specific_character id="sim_default_killer_4_default_csnosorog_f_0" team_default = "1">
+#include "gameplay\profiles\character_desc_killer_4.xml"
+    <icon>ui_inGame2_nosorog</icon>
+    <snd_config>characters_voice\human_03\ecolog_f\</snd_config>
+    <visual>actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet</visual>
+</specific_character>
