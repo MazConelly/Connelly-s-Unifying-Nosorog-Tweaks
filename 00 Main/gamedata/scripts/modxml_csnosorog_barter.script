@@ -1,0 +1,31 @@
+-- Potential monkey patch for the anomaly barter compatibility
+-- Based on this tutorial https://igigog.github.io/anomaly-modding-book/addons/dxml.html
+
+-- By s7x/Connelly
+-- Date: 2025-03-13
+-- Vesion: 0.1
+
+function on_xml_read()
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        -- XML file i want to change
+        local xml_to_change = [[text\eng\st_barter_swamps.xml]]
+
+        -- Check if its the file i want to change
+        if xml_file_name == xml_to_change then
+            -- Here is my code to change XML
+            local Barter_Text = 
+[[
+    <string id="st_novikov_6">
+        <text>Tell me, have you seen one of those Nosorog some of the other factions have? Scary things. Some of the veterans have been talking, then I called some of my merc contacts, and... well. We can't do this for just anyone, but let's just say our guys will sleep better when I'm finished. Let me worry about the important bits, but I'll need you to bring me additional tools and materials to reinforce your exoskeleton whith them.</text>
+    </string>
+    <string id="st_novikov_7a">
+        <text>On the other hand, this can work as a compromise. Still expensive, but pretty mundane in comparison. We're already testing it, you may have seen the new threads our base guard has. You won't be as mobile, no fancy servos will let you run with that much armor and extra guns on you, and you will need material and personal support close by just to operate. But if you need to defend any place from god himself, I know where I'll be placing my bets.</text>
+    </string>
+    <string id="st_novikov_7b">
+        <text>I still have ideas for that Nosorog, but you'll need a team to support you, and what it requires is not cheap. Hell, I think it'd give pause to whoever's filling Monolith's warehouses of goodies, and we're not exactly in a position to throw parties. Still, if I happen to pass you this list and you happen to find everything in it, and if I can take care of whatever you can't find in the Zone... Just don't tell Cold; I don't want to see the poor man cry.</text>
+    </string>
+]]
+            xml_obj:insertFromXMLString(Barter_Text)
+        end
+    end)
+end
