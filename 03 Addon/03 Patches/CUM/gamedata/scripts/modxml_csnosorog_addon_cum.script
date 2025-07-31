@@ -9,9 +9,10 @@ function on_game_start()
             data.visual = "actors\\stalker_nebo\\stalker_cs_proto_seva"
         end
 
-        if character_id == "csnosorog_guard_nina" then
-            data.visual = "actors\\stalker_nebo\\stalker_cs_proto_seva"
-        end
+-- Seems to be causing trouble with the LASS patch
+        -- if character_id == "csnosorog_guard_nina" then
+            -- data.visual = "actors\\stalker_nebo\\stalker_cs_proto_seva"
+        -- end
 
         if character_id == "ecolog_iskra_spirit" then
             data.visual = "actors\\stalker_neutral\\stalker_neutral_proto_seva"
