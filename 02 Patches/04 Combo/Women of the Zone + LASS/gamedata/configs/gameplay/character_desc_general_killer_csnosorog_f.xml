@@ -4,5 +4,5 @@
 #include "gameplay\profiles\character_desc_killer_4.xml"
     <icon>ui_inGame2_nosorog</icon>
     <snd_config>characters_voice\human_03\ecolog_f\</snd_config>
-    <visual>actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet</visual>
+    <visual>actors\o_nosrog\stalker_f_merc_ubernosrog</visual>
 </specific_character>

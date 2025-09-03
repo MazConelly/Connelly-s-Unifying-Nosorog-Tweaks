@@ -11,45 +11,90 @@
 
 ;The army exo is a special kind. It gets a buff of 5 to head and torso over average exos
 ;So we buff its head. We'll gave it its own head bones
-[head_damage_043]; army exo ; CLASS III + and a half
-bip01_neck 			 		= 1, 0.43
-bip01_head 			 		= 1, 0.43
-eyelid_1 			 		= 1, 0.43
-eye_left 			 		= 1, 0.43
-eye_right 			 		= 1, 0.43
-jaw_1 		 		 		= 1, 0.43
+@[head_damage_043]; army exo ; CLASS III + and a half
+bip01_neck 	= 1, 0.43
+bip01_head 	= 1, 0.43
+eyelid_1 	= 1, 0.43
+eye_left 	= 1, 0.43
+eye_right 	= 1, 0.43
+jaw_1 		= 1, 0.43
 
-![actor_armor_military_exo]:head_damage_043, !head_damage_035,
+@[actor_armor_military_exo]:body_damage_050, head_damage_043
+ap_scale	= 0.7
 
 ;--Some radiation outfits have a nosorog resistance. Let's standardize them
 ;maybe we can find them a non crazy buff?
 ;These were using the nosorog bones set, 45 + 35
-;First we create a new set. It'd be silly to make them surpass exos, so we find a middle ground
+;Some Radsuits are also stated to be for exploration with reduced combat capabilities.
+;So we need two protections, one for improved and another for explorators
+
+;First we create a new improved set. It'd be silly to make them surpass exos, so we find a middle ground
 ;Torso 43 it's like the weaker exos. That's fine. And we give them the 40 from exohelm
 ;Most radsuits have an ap_scale of 0.75, but let's leave these the 0.7. They're supposed to be better anyway.
 ;This way they're still the better radsuits, but only barely as good as the lightest exos
-[actor_armor_radiation_extra]:body_damage_043, head_damage_040
-ap_scale						= 0.7
+@[actor_armor_radiation_extra]:body_damage_043, head_damage_040
+ap_scale	= 0.7
 
 ;Now we change the bones set for the super radsuits
 ![exo_wood_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_dolg_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_dolg_red_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_dolg_urban_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_dolg_wood_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_merc_grass_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_merc_urban_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![exo_merc_wood_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
 ![freedom_exo_vineleaf_outfit]
-bones_koeff_protection        = actor_armor_radiation_extra
+bones_koeff_protection	= actor_armor_radiation_extra
+
+; Now we do the exploration radsuit set. We need the body bones first
+; We make it 375, midway between the 35 of skats and 40 of normal radsuits
+
+@[body_damage_0375] ; CLASS III
+bip01_pelvis 				= 1, 0.375
+bip01_spine 		 		= 1, 0.375
+bip01_spine1 		 		= 1, 0.375
+bip01_spine2 		 		= 1, 0.375
+
+bip01_l_clavicle	 		= 1, 0.375
+bip01_l_upperarm	 		= 1, 0.375
+bip01_l_forearm	 	 		= 1, 0.375
+bip01_l_hand	 	 		= 1, 0.075
+
+bip01_r_clavicle	 		= 1, 0.375
+bip01_r_upperarm	 		= 1, 0.375
+bip01_r_forearm	 	 		= 1, 0.375
+bip01_r_hand	 	 		= 1, 0.075
+
+bip01_l_thigh	 	 		= 1, 0.375
+bip01_l_calf	 	 		= 1, 0.375
+bip01_l_foot	 	 		= 1, 0.075
+bip01_r_thigh	 	 		= 1, 0.375
+bip01_r_calf	 	 		= 1, 0.375
+bip01_r_foot	 	 		= 1, 0.075
+
+[actor_armor_radiation_explo]:body_damage_0375, head_damage_040
+ap_scale						= 0.75
+
+;And we change the bones set for the explorer radsuits
+![exo_wood_outfit]
+bones_koeff_protection        = actor_armor_radiation_explo
+![exo_dolg_wood_outfit]
+bones_koeff_protection        = actor_armor_radiation_explo
+![exo_merc_grass_outfit]
+bones_koeff_protection        = actor_armor_radiation_explo
+![exo_merc_wood_outfit]
+bones_koeff_protection        = actor_armor_radiation_explo
+![freedom_exo_vineleaf_outfit]
+bones_koeff_protection        = actor_armor_radiation_explo
 
 ;now Nosorogs should get the 45 to head, as per Spartan helmet
 ;and to separate them from exos, 55 to torso across the board, with 60 for army nosorog
@@ -226,7 +271,7 @@ bip01_r_calf	 	 		= 1, 0.75
 bip01_r_foot	 	 		= 1, 0.14
 
 ;With Dux's model, the variants' helm looks like an improved Spartan helmet, so
-[head_damage_050]; spartan ; CLASS III +++
+@[head_damage_050]; spartan ; CLASS III +++
 bip01_neck 			 		= 1, 0.50
 bip01_head 			 		= 1, 0.50
 eyelid_1 			 		= 1, 0.50

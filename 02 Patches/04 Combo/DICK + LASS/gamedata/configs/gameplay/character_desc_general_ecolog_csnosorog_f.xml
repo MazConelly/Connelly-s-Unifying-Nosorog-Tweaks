@@ -14,5 +14,5 @@
 #include "gameplay\profiles\character_desc_csky_4.xml"
     <icon>ui_inGame2_nosorog</icon>
 	<snd_config>characters_voice\human\woman\</snd_config>
-    <visual>actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle</visual>
+    <visual>actors\o_nosrog\stalker_f_eco_ubernosrog</visual>
 </specific_character>
