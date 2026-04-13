@@ -1,9 +1,0 @@
-function on_game_start()
-    RegisterScriptCallback("on_specific_character_init", function(character_id, data)
-
-        if character_id == "cit_killers_merc_mechanic_stalker" then
-            data.visual = "actors\\stalker_merc\\stalker_merc_nosorog_mk2_hatchet"
-        end
-
-    end)
-end

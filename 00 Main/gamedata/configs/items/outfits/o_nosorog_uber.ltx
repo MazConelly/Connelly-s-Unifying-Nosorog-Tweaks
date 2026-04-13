@@ -1,0 +1,266 @@
+;------ CS nosorogs
+
+[sect_uber_nosorog_outfit_average_immunities]
+burn_immunity			= 0.009
+chemical_burn_immunity	= 0.0035
+explosion_immunity		= 0.02
+fire_wound_immunity		= 0.0025
+radiation_immunity		= 0.0
+shock_immunity			= 0.0045
+strike_immunity			= 0.0008
+telepatic_immunity		= 0.00
+wound_immunity			= 0.005
+
+[sect_uber_nosorog_outfit_hard_immunities]
+burn_immunity			= 0.01
+chemical_burn_immunity	= 0.004
+explosion_immunity		= 0.01
+fire_wound_immunity		= 0.0015
+radiation_immunity		= 0.0
+shock_immunity			= 0.005
+strike_immunity			= 0.0004
+telepatic_immunity		= 0.00
+wound_immunity			= 0.002
+
+; baseline CS-6
+;just a good at most things base nosorog
+[csky_nosorog_outfit]:outfit_base,outfit_restrictions_3
+$spawn                        = "outfit\csky_nosorog_outfit"
+class                         = E_STLK
+ef_equipment_type             = 5
+visual                        = dynamics\outfit\cs_exo_outfit
+actor_visual                  = actors\stalker_nebo\stalker_nebo4nosorog.ogf
+npc_visual                    = actors\stalker_nebo\stalker_nebo4nosorog.ogf
+player_hud_section            = actor_hud_cs_exo
+character_portrait            = ui_inGame2_nosorog
+full_icon_name                = npc_icon_exo_outfit
+full_scale_icon               = 2, 11
+inv_name                      = csky_nosorog_outfit_name
+inv_name_short                = csky_nosorog_outfit_name
+description                   = csky_nosorog_outfit_desc
+icons_texture				  = ui\ui_icon_CSNosorog
+inv_grid_x                    = 0
+inv_grid_y                    = 0
+upgr_icon_path				  = ui\ui_icon_CSNosorog
+upgr_icon_x                   = 200
+upgr_icon_y                   = 150
+upgr_icon_width               = 300
+upgr_icon_height              = 150
+upgrades                      = up_gr_firstab_exolight_1, up_gr_seconab_exolight_1, up_gr_thirdab_exolight_1, up_gr_fourtab_exolight_1, up_gr_fifthab_nosorog_1
+installed_upgrades            =
+upgrade_scheme                = up_scheme_exo_1
+community                     = csky
+kind                          = o_heavy
+cost                          = 205000
+inv_weight                    = 55
+additional_inventory_weight   = 110
+additional_inventory_weight2  = 110
+artefact_count                = 3
+immunities_sect               = sect_nosorog_outfit_immunities
+repair_type                   = outfit_exo
+;repair_part_bonus            = 0.65
+hit_fraction_actor            = 0.2
+bones_koeff_protection        = actor_armor_class5
+control_inertion_factor       = 1.88
+power_loss                    = 0.1
+
+burn_protection               = 0.22
+shock_protection              = 1.6
+radiation_protection          = 0.041
+chemical_burn_protection      = 0.094
+telepatic_protection          = 0.091
+strike_protection             = 0.85
+explosion_protection          = 0.9
+wound_protection              = 0.86
+fire_wound_protection         = 0.6
+
+
+; variant CS-6a Thunderstorm
+;fast, strong, and defensive
+[csky_nosorog_storm_outfit]:csky_nosorog_outfit
+$spawn                        = "outfit\csky_nosorog_storm_outfit"
+actor_visual                  = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6a.ogf
+npc_visual                    = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6a.ogf
+inv_name                      = csky_nosorog_storm_outfit_name
+inv_name_short                = csky_nosorog_storm_outfit_name
+description                   = csky_nosorog_storm_outfit_desc
+inv_grid_x                    = 0
+inv_grid_y                    = 3
+cost                          = 250000
+inv_weight                    = 65
+additional_inventory_weight   = 120
+additional_inventory_weight2  = 120
+immunities_sect               = sect_uber_nosorog_outfit_average_immunities
+hit_fraction_actor            = 0.15
+bones_koeff_protection        = actor_armor_csnosorog_storm
+control_inertion_factor       = 1.99
+
+burn_protection               = 0.27
+shock_protection              = 1.82
+radiation_protection          = 0.0438
+chemical_burn_protection      = 0.104
+telepatic_protection          = 0.103
+strike_protection             = 0.9
+explosion_protection          = 0.95
+wound_protection              = 1.09
+fire_wound_protection         = 0.70
+
+; variant CS-6b Hurricane
+;the "let em come" one
+[csky_nosorog_hurricane_outfit]:csky_nosorog_outfit
+$spawn                        = "outfit\csky_nosorog_hurricane_outfit"
+sprint_allowed					= false
+actor_visual                  = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b.ogf
+npc_visual                    = actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b.ogf
+inv_name                      = csky_nosorog_hurricane_outfit_name
+inv_name_short                = csky_nosorog_hurricane_outfit_name
+description                   = csky_nosorog_hurricane_outfit_desc
+inv_grid_x                    = 0
+inv_grid_y                    = 3
+cost                          = 250000
+inv_weight                    = 80
+additional_inventory_weight   = 145
+additional_inventory_weight2  = 145
+artefact_count                = 2
+immunities_sect               = sect_uber_nosorog_outfit_hard_immunities
+hit_fraction_actor            = 0.15
+bones_koeff_protection        = actor_armor_csnosorog_hurricane
+control_inertion_factor       = 1.99
+
+burn_protection               = 0.28
+shock_protection              = 1.97
+radiation_protection          = 0.045
+chemical_burn_protection      = 0.116
+telepatic_protection          = 0.103
+strike_protection             = 0.95
+explosion_protection          = 0.975
+wound_protection              = 1.3
+fire_wound_protection         = 0.75
+
+
+;-------Ecolog nosorogs
+;eco nosorogs are both made to protect from non human threats, but still nosorogs
+
+; baseline ISKRA Nosorog
+[ecolog_nosorog_outfit]:outfit_base,outfit_restrictions_3
+$spawn                        = "outfit\ecolog_nosorog_outfit"
+class                         = E_STLK
+ef_equipment_type             = 5
+visual                        = dynamics\outfit\ecolog_exo_outfit
+actor_visual                  = actors\stalker_ecologist\stalker_eco_nosorog.ogf
+npc_visual                    = actors\stalker_ecologist\stalker_eco_nosorog.ogf
+player_hud_section            = actor_hud_exo
+character_portrait            = ui_inGame2_nosorog
+full_icon_name                = npc_icon_exo_outfit
+full_scale_icon               = 2, 11
+inv_name                      = ecolog_nosorog_outfit_name
+inv_name_short                = ecolog_nosorog_outfit_name
+description                   = ecolog_nosorog_outfit_desc
+icons_texture					= ui\ui_icon_CSNosorog
+inv_grid_x                    = 0
+inv_grid_y                    = 6
+upgr_icon_path					= ui\ui_icon_CSNosorog
+upgr_icon_x                   = 200
+upgr_icon_y                   = 300
+upgr_icon_width               = 300
+upgr_icon_height              = 150
+upgrades                      = up_gr_firstab_exolight_1, up_gr_seconab_exolight_1, up_gr_thirdab_exolight_1, up_gr_fourtab_exolight_1, up_gr_fifthab_nosorog_1
+installed_upgrades            =
+upgrade_scheme                = up_scheme_exo_1
+community                     = ecolog
+kind                          = o_heavy
+cost                          = 198000
+inv_weight                    = 53
+additional_inventory_weight   = 115
+additional_inventory_weight2  = 115
+artefact_count                = 3
+immunities_sect               = sect_nosorog_outfit_immunities
+repair_type                   = outfit_exo
+;repair_part_bonus            = 0.65
+hit_fraction_actor            = 0.2
+bones_koeff_protection        = actor_armor_class5minus
+control_inertion_factor       = 1.88
+power_loss                    = 0.1
+
+burn_protection               = 0.22
+shock_protection              = 1.78
+radiation_protection          = 0.0438
+chemical_burn_protection      = 0.105
+telepatic_protection          = 0.091
+strike_protection             = 0.9
+explosion_protection          = 0.87
+wound_protection              = 0.75
+fire_wound_protection         = 0.6
+
+
+; variant ISKRA Turtle Nosorog
+;with extra psi resistance
+[ecolog_nosorog_turtle_outfit]:ecolog_nosorog_outfit
+$spawn                        = "outfit\ecolog_nosorog_turtle_outfit"
+actor_visual                  = actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle.ogf
+npc_visual                    = actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle.ogf
+inv_name                      = ecolog_nosorog_turtle_outfit_name
+inv_name_short                = ecolog_nosorog_turtle_outfit_name
+description                   = ecolog_nosorog_turtle_outfit_desc
+inv_grid_x                    = 0
+inv_grid_y                    = 9
+upgr_icon_x                   = 200
+upgr_icon_y                   = 450
+cost                          = 230000
+inv_weight                    = 59
+additional_inventory_weight   = 123
+additional_inventory_weight2  = 123
+immunities_sect               = sect_uber_nosorog_outfit_hard_immunities
+hit_fraction_actor            = 0.17
+bones_koeff_protection        = actor_armor_ecolog_nosorog_turtle
+
+burn_protection               = 0.37
+shock_protection              = 2.19
+radiation_protection          = 0.0466
+chemical_burn_protection      = 0.125
+telepatic_protection          = 0.11
+strike_protection             = 1.00
+explosion_protection          = 0.90
+wound_protection              = 0.95
+fire_wound_protection         = 0.65
+
+;------ Mercenary
+
+; variant Mercenary Hatchet Nosorog
+;just a jack of all trades
+[merc_nosorog_hatchet_outfit]:merc_nosorog_outfit
+$spawn                        = "outfit\merc_nosorog_hatchet_outfit"
+visual                        = dynamics\outfit\merc_exo_outfit
+actor_visual                  = actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet.ogf
+npc_visual                    = actors\stalker_merc\stalker_merc_nosorog_mk2_hatchet.ogf
+player_hud_section            = actor_hud_exo
+inv_name                      = merc_nosorog_hatchet_outfit_name
+inv_name_short                = merc_nosorog_hatchet_outfit_name
+description                   = merc_nosorog_hatchet_outfit_desc
+icons_texture					= ui\ui_icon_CSNosorog
+inv_grid_x                    = 0
+inv_grid_y                    = 12
+inv_grid_width					= 2
+upgr_icon_path					= ui\ui_icon_CSNosorog
+upgr_icon_x                   = 200
+upgr_icon_y                   = 600
+upgr_icon_width               = 300
+upgr_icon_height              = 150
+cost                          = 230000
+inv_weight                    = 57
+additional_inventory_weight   = 119
+additional_inventory_weight2  = 119
+immunities_sect               = sect_uber_nosorog_outfit_average_immunities
+hit_fraction_actor            = 0.15
+bones_koeff_protection        = actor_armor_merc_nosorog_hatchet
+control_inertion_factor       = 1.99
+
+burn_protection               = 0.26
+shock_protection              = 1.71
+radiation_protection          = 0.041
+chemical_burn_protection      = 0.1
+telepatic_protection          = 0.103
+strike_protection             = 0.86
+explosion_protection          = 0.95
+wound_protection              = 1.04
+fire_wound_protection         = 0.70

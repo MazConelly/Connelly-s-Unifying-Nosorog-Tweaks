@@ -1,0 +1,7 @@
+function on_game_start()
+    RegisterScriptCallback("on_specific_character_init", function(character_id, data)
+        if character_id == "csnosorog_guard_nina" then
+            data.visual = "actors\\woman\\woman_cs_nauchniy"
+        end
+    end)
+end

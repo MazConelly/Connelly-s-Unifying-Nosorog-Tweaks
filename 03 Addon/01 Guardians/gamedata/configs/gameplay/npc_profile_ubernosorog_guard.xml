@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+<!-- Clear Sky - Anatoly and his boys -->
+<character id="csnosorog_guard_anatoly">
+	<class>csnosorog_guard_anatoly</class>
+	<specific_character>csnosorog_guard_anatoly</specific_character>
+</character>
+<!-- skat -->
+<character id="csnosorog_guard_kazymyr">
+	<class>csnosorog_guard_kazymyr</class>
+	<specific_character>csnosorog_guard_kazymyr</specific_character>
+</character>
+<!-- hunter -->
+<character id="csnosorog_guard_stefan">
+	<class>csnosorog_guard_stefan</class>
+	<specific_character>csnosorog_guard_stefan</specific_character>
+</character>
+<!-- scout -->
+<character id="csnosorog_guard_petro">
+	<class>csnosorog_guard_petro</class>
+	<specific_character>csnosorog_guard_petro</specific_character>
+</character>
+<!-- seva -->
+<character id="csnosorog_guard_nina">
+	<class>csnosorog_guard_nina</class>
+	<specific_character>csnosorog_guard_nina</specific_character>
+</character>
+
+<!-- Mercenaries - Hatchet and his team -->
+<!-- Hatchet, Oak and Pianist are already in configs\gameplay\npc_profile.xml -->
+<!-- as yan_merc_01, yan_merc_02, and yan_merc_03  -->
+<!-- Goblin -->
+<character id="yan_merc_goblin">
+	<class>yan_merc_goblin</class>
+</character>
+<!-- Gazon -->
+<character id="yan_merc_mower">
+	<class>yan_merc_mower</class>
+</character>
+
+<!-- Ecologists - Topol and his Iskra team -->
+<character id="ecolog_iskra_topol">
+	<class>ecolog_iskra_topol</class>
+	<specific_character>ecolog_iskra_topol</specific_character>
+</character>
+
+<character id="ecolog_iskra_mace">
+	<class>ecolog_iskra_mace</class>
+	<specific_character>ecolog_iskra_mace</specific_character>
+</character>
+
+<character id="ecolog_iskra_snake">
+	<class>ecolog_iskra_snake</class>
+	<specific_character>ecolog_iskra_snake</specific_character>
+</character>
+
+<character id="ecolog_iskra_spirit">
+	<class>ecolog_iskra_spirit</class>
+	<specific_character>ecolog_iskra_spirit</specific_character>
+</character>
+
+<character id="ecolog_iskra_marshal">
+	<class>ecolog_iskra_marshal</class>
+	<specific_character>ecolog_iskra_marshal</specific_character>
+</character>
+
+
+<!-- Clear Sky - rookie squad, the minder -->
+<character id="csnosorog_guard_rookie_minder">
+	<class>csnosorog_guard_rookie_squadie</class>
+	<specific_character>csnosorog_guard_rookie_minder</specific_character>
+</character>
+
+</xml>

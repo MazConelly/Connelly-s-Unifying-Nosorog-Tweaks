@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+<!-- Names -->
+	<!-- Clear Sky - Anatoly and his boys -->
+	<string id="csnosorog_guard_anatoly">
+		<text>Anatoly Gritzaenko</text>
+	</string>
+	<!-- skat -->
+	<string id="csnosorog_guard_kazymyr">
+		<text>Kazymyr Vlasyuk</text>
+	</string>
+	<!-- hunter -->
+	<string id="csnosorog_guard_stefan">
+		<text>Stefan Omelchuk</text>
+	</string>
+	<!-- scout -->
+	<string id="csnosorog_guard_petro">
+		<text>Petro Hrytsenko</text>
+	</string>
+	<!-- seva -->
+	<string id="csnosorog_guard_tymofij">
+		<text>Tymofij Yarov</text>
+	</string>
+	
+	<!-- Mercenaries - Hatchet and his team -->
+	<string id="yan_merc_04">
+		<text>Goblin</text>
+	</string>
+	<string id="yan_merc_05">
+		<text>Gazon</text>
+	</string>
+	
+	<!-- Ecologists - Topol and his Iskra team -->
+	<string id="ecolog_iskra_topol">
+		<text>Topol</text>
+	</string>
+	<string id="ecolog_iskra_mace">
+		<text>Mace</text>
+	</string>
+	<string id="ecolog_iskra_snake">
+		<text>Snake</text>
+	</string>
+	<string id="ecolog_iskra_spirit">
+		<text>Spirit</text>
+	</string>
+
+
+<!-- Dialog -->
+
+	<string id="csnosorog_guard_rookie_minder_initialize">
+		<text>?Vale, todos los voluntarios para el entrenamiento de Anatoly, reunios alrededor mia, que nos vamos!</text>
+	</string>
+
+	<string id="csnosorog_guard_anatoly_ask_story_0">
+		<text>Disculpa, espero que no te importe pero vaya armadura que llevas puesta. ?De donde narices has sacado algo asi? No se parece a  a nada que tengamos... ?hasta el camuflage parece diferente! Como un encargo personalizado. Es facinante, de verdad.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_1">
+		<text>
+		?Ja! No serias el primero en preguntar. Si, es un trabajo a encargo en cierto modo. Novikov lo hizo, ?Sabes de quien hablo? ?El tecnico principal de Clear Sky? Bueno, lo llama el CS-6b Huracan. Y el nombre le pega, ya te lo digo. Es una bestia parda, ?una fuerza de la naturaleza! O bueno, ?al menos me hace sentir como tal, ja! Es un Nosorog mejorado, ?y no dejes que te enganen las apariencias! Pesa aun mas de lo que imaginas. No es muy confortable pero vale la pena. El modelo CS-6a, o Tormenta, es probablemente mejor. Menos proteccion, mas velocidad, pero usa una cantidad respetable de materiales anomalos para fabricarlo.\n \n
+		Soy mas un cazador de mutantes y soldado de profesion, asi que no tenia apenas artefactos a mi nombre cuando me presente voluntario para las primeras muestras. ?Pero en fin! ?Llevo encima suficiente armadura para ser considerado el hombre mas a salvo de la Zona! Y podria tomar una base entera. Probablemente por eso me pidieron que me encargara de la patrulla principal, o el campamento mobilizado como me gusta llamarlo. Je.</text>
+	</string>
+
+	<string id="csnosorog_guard_anatoly_ask_story_2">
+		<text>No suenas como el resto de la gente en Clear Sky.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_3">
+		<text>Mierda... ?se me ha estropeado la dicion asi de mal? Bueno si, estana con Duty, antes. Sargento Mayor Anatoly Gritzaenko, a tu servicio. Llamame Senor a partir de ahora... ?ja! En serio, no te molestes. Y antes de que preguntes, no, no abandone Duty a malas. Mi equipo y yo nos encontramos en una mala situacion, y un grupo de Clear Sky nos salvo el trasero. Date cuenta, esto ocurrio despues de lo que fuera que sucediera que casi acabo con la faccion entera en la planta nuclear.\n \n
+		Me sentia un poco mal de que fueran ellos los que nos salvaran, asi que tuve una charla con el General Voronin. Clear Sky y Duty no estan de acuerdo en todo, pero no son los peores vecinos. Recogi mis cosas, y mas tarde estaba a la puerta de Cold ofreciendo my assistencia. ?Ahora soy el control de plagas y el instructor para la mas miserable panda que el pobre hombre me manda, ja!\n \n
+		Bueno, no es sea un grupo profesional como Duty, pero no es tan malo. Secretos o no, Clear Sky parece atraer gente con la cabeza bien puesta; puedes depender de los veteranos e incluso de los cabezalibros, y saben como vivir en el pantano mejor que nadie; los pantanos son un buen sitio para entrenar, y lo que ensenamos a los muchachos se les queda en la cabeza el suficiente tiempo para ayudarles a sobrevivir. Incluso aqui al sur no es raro escuchar a la Zona llevarse a gente entrenada, y ya ni te imaginas a algunos novatos con los que he tratado.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_4">		
+		<text>?Y no preferirias un trabajo, bueno, mas activo? ?Sobretodo con esa armadura! Por lo que he escuchado de Duty, tu gente es un tanto agresiva.</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_5">
+		<text>?Agresiva? Es mas la mentalide de "estar alerta en todo momento", y seamos honestos, la Zona lo demanda. Supongo que entiendo como podemos tener esa reputacion, pero me gusta pensar que no somos tan temerarios como otras facciones tienden a ser, ciertamente no como esos capullos de Freedom. Recuerda, nos esforzamos para ser disciplinados.\n \n
+		Pero en fin, para responder a tu pregunta, hay varias razones por las que eso no va a pasar. Para empezar, me estoy haciendo un poco viejo para ir metiendo las narices donde no me llaman, al menos sin un plan. Segundo, irme de paso hace un poco dificil lo de actuar como contacto si Voronin envia a alguien aqui, ?entiendes? Y por ultimo, la verdad, me gusta entrenar a los muchachos, se me da bien. Y si asi es como puedo ayudar mas, entonces estoy contento de hacerlo.\n \n
+		Ah, y la armadura pesa tanto que los servos chupan baterias mas rapido de lo que una anomalia Vortice te chuparia a ti. Es tolerable cuando la cosa esta tranquila, pero no me puedo permitir distracciones cuando la fiesta empieza. Y las baterias pesan lo suyo. Cargamos con unas extras cuando estamos en patrulla; esa chatarra es buena para entrenar resistencia. Pero a diferencia de exoskeletos normales y otros nosorogs, viajar a larga distancia no es muy practico para este modelo, asi que tenemos que ir y venir de la base regularmente para repostar. Creeme, no es tan malo o aburrido como suena. La verdad es que garantiza que siempre este cerca de la base para ayudar a repeler un ataque. No es que haya ocurrido aun, pero ya sabes como esos renegados gilipollas siguen intentandolo. No entiendo que le pudo haber echo la vieja guardia a esos sacos de mierda para que se obsesionen asi...</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_6">
+		<text>Vaya, no me esperaba todo esto cuando te vi. Parece que te has ajustado bastante bien aqui, ?que cosa mas loca! Venir de Duty, que es una vida tan ajetreada a un stylo tan sedentario aqui en los Pantanos, uniendote a Clear Sky... ?Y no echas de menos a Duty?</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_7">
+		<text>Claro que echo de menos a Duty. Todos los miembros, a los que aun considero mis hermanos, y los lazos que compartimos. Las ascuas de nuestros corazones enlazados como uno, forjado en fuego y lucha. Pero estos son mis muchachos tambien, que los he formado yo mismo; y sus investigaciones ayudan a todo el mundo tanto como las de los cientificos del Ministerio de Ciencia.\n \n
+		Asi que no, no voy a abandonar a mis chicos. Perder algo de lo que una vez fuiste parte es lo normal, es parte de la vida. Y la vida va acompanada de cambio, y debes adaptarte a ello si quieres mantenerte cuerdo; la Zona demanda cambio de una manera u otra a cada paso del camino, y he acabado aceptando eso. Unirme a Clear Sky fue mi decision, pero intento no pensar en ello como dejar Duty, pero como construir puentes y ayudando a una muchachada amistosa. Necesitamos mas de eso por aqui, ?no crees?\n \n
+		Por cierto, somos un grupo grande, pero podemos aceptar a uno mas si estas interesado en el entrenamiento. Normalmente me encontraras aqui con los muchachos, solo tienes que acercarte y decir que quieres unirte a una sesion cualquier dia. Mantente a salvo, stalker, y buena caza. ?No te dejes perder a la Zona!</text>
+	</string>
+	
+	<string id="csnosorog_guard_anatoly_ask_story_8">
+		<text>Tu tambien sargento, y que vaya bien con la instruccion. Ha estado bien charlar contigo, ya hablaremos otra vez que nuestros caminos se cruzen. Adios.</text>
+	</string>
+
+
+
+<!-- Hatchet's introduction -->
+	<string id="csnosorog_guard_hatchet_ask_story_0">
+		<text>
+		?Estas al cargo de los guardias aqui? He visto a esos militares por el bunker, pero vosotros no pareceis como ellos.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_1">
+		<text>
+		Correcto, somos contratistas. Me llaman Hatchet, y veras a mi equipo alrededor, asegurandose de que el bunker este bien seguro para la gente del Ministerio. Algunos saben lo que hacen, tal vez veas al Profesor Kruglov de paseo en solitario sin que le importe nade un pimiento, pero este lugar se puede ir al carajo en cualquier momento. Algo sobre el laboratorio escondido bajo la factoria que atrae a los mutantes, o peor.\n \n
+		Tambien veras a nuestros hombres por el bunker de Jupiter, o escortando expediciones cientificas a donde se necesite, para proveer seguridad donde el Govierno no pueda. Hazme el favor, y dejalos estar. No es que tengan los mejores modales, pero este trabajo no es para pusilanimes. 
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_2">
+		<text>
+		?Vuestros hombres...? ?No estais con el resto de mercenarios?
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_3">
+		<text>
+		Joder, vaya pregunta me sueltas, chaval. No llevas aqui mucho tiempo, ?verdad? Si, ya te veo las costuras nuevecitas, no intentes esconderlo. No te preocupes, no le dire a tu madre a donde te has escapado...\n \n 
+		Hmm, parece que la cosa esta en calma, supongo que puedo dedicarte un minuto. Igual has oido que hace anos los mercenarios solo eramos un punado de bandas inconexas. Todos vinimos por mas o menos las mismas razones. Demasiado rudos para trabajar en el exterior, promesas de buen dinero trabajando aqui, nada de leyes... La verdad, seria raro el mercenario que no hubiera hecho algo cuestionable, yo mismo incluido. Pero los habia de todos los tipos. Hog y su equipo eran un poco apartados, pero podias hablar con ellos sin que te reventaran la cabeza. O este tio, Scar; muy bueno en lo que hacia, pero un poco raro, probablemente la razon por la que trabajaba de guia en solitario. Y luego estaban pedazos de mierda como Wolfhound, jodido sicopata. Peh.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_4">
+		<text>No le echas de menos, supongo.</text>
+	</string>
+		
+	<string id="csnosorog_guard_hatchet_ask_story_5">
+		<text>Casi seguro de que el bastardo se toqueteaba pensando en quien iba a destrozar luego. No es que yo sea un chico del coro, lo admito, pero no juego con mi comida. Ojos en el objetivo, usa tus balas con tu cabeza y no con tu polla, hazlo rapido, y con suerte yo todos los demas nos podemos dejar en paz, como poco.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_6">
+		<text>Bastante razonable para un soldado a sueldo.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_7">
+		<text>
+		Ja, eso lo he escuchado sin palabras tan diplomaticas. Pero es que no me gusta la idea de tener que guardarme las espaldas todos los dias. No se, yo solo vine de Armenia buscando trabajo; tienes que aceptar que vas a acabar con una diana en tu espalda en esta profesion, pero esa no es razon para enemistarme con toda la Zona. Eso o puede ser la edad. Quien sabe.\n \n
+		El caso, yo y mi equipo eramos solo una parte mas del grupo de Chacal. El hombre tenia los contactos, los tratos, y la experiencia. Asi que unos cuantos acabamos trabajando para el. No es que estuvieramos bajo ninguna ilusion de que tratara con angelos ni nada. Pero entonces ocurre una cosa curiosa. Un dia durante un trabajo, yo y los chicos nos encontramos en ninguna parte en Zaton, sin viveres, ni amistosos cerca. Y este stalker aparece y comparte su comida. Tiene el porte de un militar, pienso. Hablamos un poco, escarba unas herramientas del lugar, y se larga. Un basurero en horas bajas, conclui. Mientras tanto, Chacal tenia a su segundo al mando, Black, infiltrado en el bunker de Jupiter para estropearles el trabajo a los cientificos y robar sus estudios. Hablamos del tipo de gilipollas que no esta interesado en hacer amigos.\n \n
+		Asi que nuestro basurero aparece por alli, se va para recuperar unos documentos, y el equipo de Black desaparece. Un dia mas tarde nuestro amigo reaparece en el bunker con los documentos, diciendo que necesitan un nuevo equipo de seguridad. Resulta que el hombre era, sin bromas, un agente del SSU, y Black mordio mas de lo que podia masticar.\n \n
+		Asi que, oye, Chacal no aparece, no tenemos nada mejor que hacer, aceptamos el trabajo. Hermann podria vivir sin el palo que tiene por el culo. Pero el resto de investigadores resultaron ser gente bastante maja en cuanto se acostumbraron a nosotoros, y ese equipo Iskra que formaron entonces se mostraron bastante receptivos a algo de entrenamiento correctivo. Novikov, su tecnico entonces, parecia bastante decaido, pero nos hicimos amigos. Convirtio mi exoskeleton en lo que me ves llevar ahora mismo. La verdad es que no nos podemos quejar.\n \n
+		Pues una semana mas tarde oigo que Chacal esta criando malvas en mitad de Pripyat. Adivina a quien acudieron el resto de la banda a por media idea de que hacer ahora.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_8">
+		<text>?Todos? ?Tantos eran?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_9">
+		<text>Bueno, tras las perdidas, todavia eramos suficientes para considerarnos una banda, pero no es que fueramos un ejercito si es lo que estas pensando.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_10">
+		<text>
+		Todo esto es muy interesante, pero no veo que tiene que ver con el resto de mercenarios.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_11">
+		<text>A eso estoy llegando. Asi que tengo a mas gente a mis ordenes con las que sabia que hacer. Y me llegan noticias de que alguien esta llamando a todas las bandas a reunirse en la Ciudad Muerta y resolver unos asuntos sobre nuestro servicio a nuestro "cliente compartido". No preguntes. Algunos de los chicos quieren ir; no es que un solo bunker necesite tantos guardias. Pero algo me olia mal. Pero supuse que tendria que ir y ver que ocurre. No queria romper el contrato con los cientificos, asi que deje a los recien llegados alli mientras me lleve a mi equipo a la Ciudad Muerta, como representante de todos.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_12">
+		<text>?Y no te gusto lo que encontraste?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_13">
+		<text>Para nada. No ocurrio nada dramatico, al menos cuando llegue. Dushman y su banda habian empezado a aglutinar a todas las demas, con una excusa de mejor organizacion. Muy bonito todo, pero es que antes de preguntar tan amablemente a bandas como las mias, ya habia tomado a otras por la fuerza.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_14">
+		<text>No era una negociacion, era una demostracion de fuerza. No necesitaba tomar tu grupo por la fuerza si demonstraba que no le iba a custar ningun esfuerzo.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_15">
+		<text>Lo has pillado. Asi que hice lo que se hacer mejor. Sonreir educadamente dando marcha atras, decir que lo hablaria con el resto del grupo, y galopar de vuelta a Jupiter en cuento perdieron mi culo de vista.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_16">
+		<text>?Y ahora trabajais exclusivamente para los ecologistas?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_17">
+		<text>Imagine que era nuestra mejor eleccion. Ya nos habiamos deshecho de dos capullos al mando, no estaba de animo para averiguar si Dushman iba a ser otro mas, y la mayoria de la banda parecian estar contentos conmigo como lider. Y aunque el Ministerio de Ciencia no paga tanto, es una paga facil y constante. Eso, y que hace mas facil volver al Exterior cuando nos aburramos de la Zona, tal vez con cartas de recomendacion. Los chicos aprecian esa idea.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_18">
+		<text>?Y Dushman no reacciono a todo ello?</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_19">
+		<text>Bueno, igual estoy malinterpretando el mal de ojo que me echa cuando nos cruzamos. Pero creo que el ordenar que todas las rutas clandestinas bajo su control me cierren el paso me da una idea de lo que piensa. Creo que esperaba usarme para vigilar a los cientificos para el. Que pena. Pero ya se llevo su trozo del pastel. Does de mis hombres volvieron e hicieron un trato con el por los esquemas de mi armadura. Que se atragante los tres con su dinero.\n \n
+		Y ahora entiendes la differencia entre ambos grupos. No es que su gente y la mia empiecen a tirotearse cuando se cruzan, pero se puede notar la tension. Y no tension sexual.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_20">
+		<text>No se si preguntar...</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_21">
+		<text>Rostok, Bar 100, happy hours los domingos. Si no puedes ligarte a nadie, Barkeep puede conseguir lo que sea, preguntale por compania. Pero no preguntes por mujeres, las que entran en la Zona no lo hacen para prostituirse.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_22">
+		<text>Ah, vale, eso... no es lo que tenia en menute.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_23">
+		<text>(Hatchet sacude tu hombro ligeramente, un muestra de control impresionante considerando lo que lleva)\n \n
+		Aligera, chaval, te estoy tomando el pelo, happy hours es el martes. Pero nuestro minuto se acabo, y este lugar no se va a patrullar solo. Si necesitas algo, habla mejor con los militaris o el buen doctor. Mantente a salvo ahi fuera, pero no dudes en volver, mientras este de descanso no importa charlar.</text>
+	</string>
+
+	<string id="csnosorog_guard_hatchet_ask_story_24">
+		<text>Puede que lo haga. Gracias por tu tiempo y la historia, Hatchet. Mantente a salvo tu tambien.</text>
+	</string>
+
+	
+<!-- Topol's introduction -->
+
+	<string id="csnosorog_guard_topol_ask_story_0">
+		<text>
+		Ah, no sabia que alguien ya estaba ocupando este lugar.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_1">
+		<text>No pasa nada, colega. Puedes acercarte, solo estaremos aqui un tiempo para un poco de estudio improvisado.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_2">
+		<text>?Estudio? No pareceis cientificos, con toda esa armadura.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_3">
+		<text>Claro que lo somos, nena. Somos Iskra. Habras oido de nosotros.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_4">
+		<text>La verdad es que no.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_5">
+		<text>?De verdad? Ya tienes que ser nuevo por aqui. ?No has visto a ningun equipo de ecologistas? Todos somos parte de Iskra. Equipo de Investigacion y Estudio Cientifico Iskra, si quieres ponerte formalito.\n \n
+		O Chispa, si como Snake alli quieres ir de "internacional".\n \n
+		(Ha levantado la voz para esa ultima parte. Crees oir a alguien murmurar a lo lejos)\n \n
+		Nah, nos gusta como suena Chispa. Pero nos gusta jorobar a Snake un poquito tambien por la idea. Soy Topol, encantado de conocerte.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_6">
+		<text>?Asi que, que? ?Sois todos... cientificos de accion?
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_7">
+		<text>?Ja! Cientificos de accion. Voy a robarte eso, si no te importa. A Spirit le va gustar.\n \n
+		Bueno, no todos nosotros somos cientificos. Yo casi consegui mi titulo universitario, pero, er, vine a la Zona antes de ello. Si ves a alguien en uno de esos trajes HAZMAT, seguro que lo son. Al menos con diploma y permiso del gobierno, si asi es como vas a definier a un cientifico aqui. Tambien hay algunos guardas profesionales venidos del Exterior, y los mercenarios de Hatchet como seguratas; gente decente para ser mercenarios, pero no esperes que te dirijan la palabra, al menos antes de concerte.\n \n
+		Pero muchos de nosotros eramos tus tipicos stalkers de jardin antes de unirnos. Los cientificos emplaban stalkers en el pasado, claro, pero nuestro equipo fue el primero que realmente nos dedicamos a ellos. Haciamos trabajos de todo tipo para el bunker de Jupiter, hasta que por fin Doctor Ozersky consiguio convencer a los mandamuchos de que eramos lo suficientemente utiles para tenernos a mano.\n \n
+		?Y esa es la historia de como cuantro hombres con barba dieron a luz a una preciosa nina, y la llamaron Iskra!
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_8">
+		<text>Horrenda imagen mental a un lado. ?Y os dan equipamiento de este nivel? Lo que llevas parece sacado de un ejercito de ciencia ficcion.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_9">
+		<text>Ya bueno, esta armadura es... ?un prestamo, digamos? Del ejercito. Un Nosorog no es el tipo de cosa que les das a tus soldados rasos, asi que no estan muy contentos de prestarselo al Ministerio de Ciencia, pero no pueden quejarse. Como dije, hemos sido muy utiles desde 2012.\n \n
+		No somos combatiantes, ojo. Cierto, nosotros podriamos bailar con los mejores, y todos los equipos seguramente tengan que aplicarse las pilas cuando los mercenarios se vayan. Pero estas armaduras se modificaron con ayuda de Clear Sky para exploracion. Yo o Mace estamos mas protegidos contra anomalias que probablemente cualquier otro hombre alrededor, sin contar trajes HAZMATs de verdad o un SEVA, y hasta podriamos aguantar un par de ataques de una quimera enfurecida... probablemente. No intentemos poner eso a prueba. ?Quimeras rabiosas? Ni de lejos.\n \n
+		Pero si que probamos la psi-resistencia mejorada del caso modificado en mi Tortuga. Psi-proteccion nivel cinco, chaval. Aquel controlador se llevo una sorpresa muy fea cuando ignore sus trucos. Muy, muy fea.\n \n
+		... Vale, si, tengo problemas con los controladores. Todo el mundo lo tiene, no me mires asi.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_10">
+		<text>Ya. Pero todo esto suena a que estais contratados por el estado. Hubiera pensado que con stalkers siendo considerados ilegales, eso no ocurriria.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_11">
+		<text>A ver, ilegales o no, somos cooperativos, somos tipos duros y sabemos movernos por la Zona, y tienen que seguir algun protocolo de seguridad laboral, aunque sea solo para asegurarse de que hacemos el trabajo, ?no? Y a cambio nos arreglan el papeleo para volver al Exterior sin problemas. Eventualmente. La verdad es que se toman su tiempo.\n \n
+		Bueno, supongo que lo consideran una manera para pagar nuestras trangresiones. Despues de todo, desde su punto de vista, puede que vean nuestra situacion en la Zona parecido al trabajo carcelario. Nuestro trabajo, claro, estando entre los cinco mas peligrosos en el mundo, no un telar en un complejo prision.\n \n
+		Espera. Eso probablemente no sea tampoco un trabajo agradable. Boca, conoce mi bota...\n \n		
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_12">
+		<text>Con todo, es mejor de lo que muchos stalkers tienen.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_13">
+		<text>Es un trabajo estable, eso ya te lo puedo decir. Y viene con permiso para experimentar toda la belleza de la Zona sin preocuparte del ejercito o de las facciones y sus guerrillas. O muta- No. No la voy a pifiar ahora.\n \n
+		Menos bandidos, pero ya hemos aprendido a darles cachetes en el culo. Y Monolitas. Esos si que me asustan un poco. Pero podemos defendernos de algun grupito que nos encontremos por el norte.</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_14">
+		<text>Pareciera que el sur aqui no es... muy excitante para vosotros.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_15">
+		<text>?Estas de cona? No, no, nos gusta estar aqui. Las anomalias al sur parecen actuar de manera diferente a en el norte. En el norte tienden a agrouparse en pequenos campos concentrados. Muy bien empaquetados todos. Aqui al sur es lo contrario, y mucho mas caotico. Hay teorias de por que, per mas importante, siempre hay una necesidad de que alguien tome unas lecturas y observaciones. Incluso en un lugar tan aburrido como Cordon.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_16">
+		<text>Claro, ?pero un equipo como el tuyo? Podrias enviar a otros.</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_17">
+		<text>
+		Hay otra razon. Marshal, nuestro novato, tiene una corazonada. Bueno, el esta seguro, pero lo hemos rebajado a corazonada. Jura que ha descubierto un camino a la vieja planta quimica cerca de aqui. Que podria ser muy interesante, ver como le ha ido al sitio durante estos anos de isolacion. Teniamos un trabajo de doc Sakharov por aqui cerca, y Spirit le ha echado un ojo al chico si tu me entiendes, asi que vamos a estar por aqui un poco y ver si encontramos algo. Sin suerte de momento. Pero en fin, a veces no encuentras nada. Sera bueno que Marshal aprenda eso.\n \n
+		Pero bueno, sientete libre de echar el rato aqui, los chicos no tendran ningun problema contigo si tu no creas problemas. Lo unico, no toques el equipo, lleva un rato de calibrar. O peor, moverlo al bunker en Yantar. Incluso peor, todo el camino de vuelta a Jupiter... Y si te vas, estate a salvo, colega.
+		</text>
+	</string>
+
+	<string id="csnosorog_guard_topol_ask_story_18">
+		<text>Tu tambien, Topol, y buena suerte con tus estudios.
+		</text>
+	</string>
+
+
+</string_table>

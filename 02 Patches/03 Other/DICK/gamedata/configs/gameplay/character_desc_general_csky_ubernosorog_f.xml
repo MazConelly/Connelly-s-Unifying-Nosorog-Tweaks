@@ -1,0 +1,26 @@
+<!-- extra females -->
+<!-- 1 CS-6 nosorog -->
+<specific_character id="sim_default_csky_4_default_csnosorog_f_0" team_default = "1">
+	<name>GENERATE_NAME_woman</name>
+#include "gameplay\profiles\character_desc_csky_4.xml"
+    <icon>ui_inGame2_nosorog</icon>
+	<snd_config>characters_voice\human\woman\</snd_config>
+    <visual>actors\stalker_nebo\stalker_nebo4nosorog_mk1</visual>
+</specific_character>
+
+<!-- 1 CS-6a, 1 CS-6b -->
+<specific_character id="sim_default_csky_4_default_csnosorog_f_1" team_default = "1">
+	<name>GENERATE_NAME_woman</name>
+#include "gameplay\profiles\character_desc_csky_4.xml"
+    <icon>ui_inGame2_nosorog</icon>
+	<snd_config>characters_voice\human\woman\</snd_config>
+    <visual>actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6a</visual>
+</specific_character>
+
+<specific_character id="sim_default_csky_4_default_csnosorog_f_2" team_default = "1">
+	<name>GENERATE_NAME_woman</name>
+#include "gameplay\profiles\character_desc_csky_4.xml"
+    <icon>ui_inGame2_nosorog</icon>
+	<snd_config>characters_voice\human\woman\</snd_config>
+    <visual>actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b</visual>
+</specific_character>

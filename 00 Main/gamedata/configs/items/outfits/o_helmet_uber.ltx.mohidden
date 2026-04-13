@@ -1,0 +1,104 @@
+[helm_spartan_plus]:tch_helmet
+$spawn							= "outfit\spartan_plus"
+class							= E_HLMET
+visual							= dynamics\outfit\helm_battle
+
+inv_name						= helm_spartan_plus
+inv_name_short					= helm_spartan_plus
+description						= helm_spartan_plus_descr
+inv_grid_x						= 80
+inv_grid_y						= 22
+upgr_icon_x						= 716
+upgr_icon_y						= 824
+upgr_icon_width					= 198
+upgr_icon_height				= 129
+upgrades						= up_gr_firstab_helm_resp_4
+upgrade_scheme					= up_scheme_helm_resp_4
+
+kind							= o_helmet
+cost							= 42000
+inv_weight						= 5.24
+additional_inventory_weight		= 0
+additional_inventory_weight2	= 0
+immunities_sect					= sect_helm_spartan_plus_immunities
+repair_type						= helmet
+;repair_part_bonus				= 0.22
+hit_fraction_actor				= 0.30
+bones_koeff_protection			= actor_helm_spartan_plus
+control_inertion_factor			= 1
+
+helmet_type						= super ; helmet restriction compatibility
+
+burn_protection				= 0.280
+shock_protection			= 0
+radiation_protection		= 0.03
+chemical_burn_protection	= 0.095
+telepatic_protection		= 0.060
+strike_protection			= 0
+explosion_protection		= 0.45
+wound_protection			= 0.16
+
+[sect_helm_spartan_plus_immunities]
+burn_immunity			= 0.030
+chemical_burn_immunity	= 0.02
+explosion_immunity		= 0.045
+fire_wound_immunity		= 0.045
+radiation_immunity		= 0.0
+shock_immunity			= 0.0
+strike_immunity			= 0.045
+telepatic_immunity		= 0.0
+wound_2_immunity		= 0.0
+wound_immunity			= 0.0
+
+[helm_sentinel]:tch_helmet
+$spawn							= "outfit\helm_sentinel"
+class							= E_HLMET
+visual							= dynamics\outfit\helm_sentinel
+
+inv_name						= helm_sentinel
+inv_name_short					= helm_sentinel
+description						= helm_sentinel_descr
+inv_grid_x						= 80
+inv_grid_y						= 22
+upgr_icon_x						= 716
+upgr_icon_y						= 824
+upgr_icon_width					= 198
+upgr_icon_height				= 129
+upgrades						= up_gr_firstab_helm_resp_4
+upgrade_scheme					= up_scheme_helm_resp_4
+; add night vission upgrades? auto detector?
+
+kind							= o_helmet
+cost							= 66000
+inv_weight						= 7.11
+additional_inventory_weight		= 0
+additional_inventory_weight2	= 0
+immunities_sect					= sect_helm_sentinel_immunities
+repair_type						= helmet
+;repair_part_bonus				= 0.22
+hit_fraction_actor				= 0.25
+bones_koeff_protection			= actor_helm_sentinel
+control_inertion_factor			= 1
+
+helmet_type						= super ; helmet restriction compatibility
+
+burn_protection				= 0.275
+shock_protection			= -0.05 ; can it even accept negative values?
+radiation_protection		= 0.035
+chemical_burn_protection	= 0.099
+telepatic_protection		= 0.060
+strike_protection			= 0
+explosion_protection		= 0.5
+wound_protection			= 0.20
+
+[sect_helm_sentinel_immunities]
+burn_immunity			= 0.035
+chemical_burn_immunity	= 0.025
+explosion_immunity		= 0.05
+fire_wound_immunity		= 0.05
+radiation_immunity		= 0.0
+shock_immunity			= 0.0
+strike_immunity			= 0.05
+telepatic_immunity		= 0.0
+wound_2_immunity		= 0.0
+wound_immunity			= 0.0

@@ -1,0 +1,346 @@
+function on_game_start()
+    RegisterScriptCallback("on_specific_character_init", function(character_id, data)
+
+-- Swamp Guardians
+        if character_id == "csnosorog_guard_anatoly" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_pkp_siber_kobra \n
+			ammo_pkm_100 = 2 \n
+			ammo_7.62x54_ap = 2 \n
+			wpn_mp412 \n
+			ammo_357_hp_mag = 5 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			hand_radio \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			]]
+        end
+
+-- Nothing in BaS seems appropiate to swap the SPAS12. A Saiga Merc or KS23, maybe?
+        -- if character_id == "csnosorog_guard_kazymyr" then
+			-- data.supplies= [[
+			-- [spawn] \n
+			-- wpn_spas12_custom \n
+			-- ammo_12x70_buck = 3 \n
+			-- ammo_12x76_zhekan = 2 \n
+			-- ammo_12x76_dart = 2 \n
+			-- wpn_cz75_auto \n
+			-- ammo_9x19_fmj = 3 \n
+			-- ammo_9x19_ap = 2 \n
+			-- ammo_9x19_pbp = 2 \n
+			-- wpn_binoc \n
+			-- device_torch \n
+			-- bandage = 2 \n
+			-- medkit_army = 2 \n
+			-- stimpack_army = 2 \n
+			-- #include "gameplay\supplies\character_items_nd.xml"
+			-- #include "gameplay\supplies\character_food.xml"
+			-- #include "gameplay\supplies\character_drugs_3.xml"
+			-- ]]
+        -- end
+
+        if character_id == "csnosorog_guard_stefan" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_ak105_bas_swamp \n
+			ammo_5.45x39_fmj = 3 \n
+			ammo_5.45x39_ap = 2 \n
+			ammo_5.45x39_ep = 2 \n
+			wpn_pl15 \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_pbp = 2 \n
+			ammo_9x19_pbp = 2 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			]]
+        end
+
+        if character_id == "csnosorog_guard_petro" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_kar98_retrotac_pn23fore
+			ammo_7.92x33_fmj = 3 \n
+			ammo_7.92x33_ap = 2 \n
+			wpn_cz75_auto \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_ap = 2 \n
+			ammo_9x19_pbp = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			]]
+        end
+
+        if character_id == "csnosorog_guard_nina" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_mosin \n
+			ammo_7.62x54_7h1 = 3 \n
+			ammo_7.62x54_ap = 2 \n
+			ammo_7.62x54_7h14 = 2 \n
+			wpn_pl15 \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_pbp = 2 \n
+			ammo_9x19_pbp = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			]]
+        end
+
+-- Iskra
+        if character_id == "ecolog_iskra_topol" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_howa20 \n
+			ammo_pkm_100 = 2 \n
+			ammo_7.62x54_ap = 2 \n
+			wpn_mp412 \n
+			ammo_357_hp_mag = 5 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			hand_radio \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "ecolog_iskra_mace" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_saiga12s_m1_kobra \n
+			ammo_12x70_buck = 3 \n
+			ammo_12x76_zhekan = 2 \n
+			ammo_12x76_dart = 1 \n
+			wpn_usp_tac_deltapoint \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_pbp = 2 \n
+			ammo_9x19_ap = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "ecolog_iskra_snake" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_m4_ru556_acog \n
+			ammo_5.56x45_fmj = 3 \n
+			ammo_5.56x45_ss190 = 2 \n
+			ammo_5.56x45_ap = 2 \n
+			wpn_fnp45_custom \n
+			ammo_11.43x23_fmj = 3 \n
+			ammo_11.43x23_hydro = 2 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "ecolog_iskra_spirit" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_fal_aus_kit_sa5x_spec \n
+			ammo_7.62x51_fmj = 4 \n
+			ammo_7.62x51_ap = 3 \n
+			wpn_usp_tac_deltapoint \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_pbp = 2 \n
+			ammo_9x19_ap = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+-- Hatchet's team
+        if character_id == "yan_merc_01" then
+			data.supplies= [[
+			[spawn] \n
+			wpn_scar_siber_eot \n
+			ammo_7.62x51_fmj = 3 \n
+			ammo_7.62x51_ap = 2 \n
+			wpn_sig220_n_upg220 = 1 \n
+			ammo_11.43x23_fmj  = 2 \n
+			ammo_11.43x23_hydro = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "yan_merc_02" then
+			data.supplies= [[
+			[spawn] \n
+        wpn_usas12 \n
+		ammo_12x70_buck = 3 \n
+		ammo_12x76_zhekan = 2 \n
+		ammo_12x76_dart = 2 \n
+        wpn_glock17_m1 \n
+        ammo_9x19_fmj  = 3 \n
+		ammo_9x19_pbp = 2 \n
+		ammo_9x19_ap = 2 \n
+		wpn_binoc \n
+		device_torch \n
+		bandage = 2 \n
+		medkit_army = 1 \n
+		medkit_scientic = 1 \n
+		stimpack_army = 1 \n
+		stimpack_scientic = 1 \n
+		#include "gameplay\supplies\character_items_nd.xml"
+		#include "gameplay\supplies\character_food.xml"
+		#include "gameplay\supplies\character_drugs_3.xml"
+		#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "yan_merc_03" then
+			data.supplies= [[
+			[spawn] \n
+        wpn_ak74_pmc_acog \n
+		ammo_5.45x39_fmj = 3 \n
+		ammo_5.45x39_ep = 2 \n
+		ammo_5.45x39_ap = 2 \n
+        wpn_sig220_n \n
+        ammo_11.43x23_fmj  = 2 \n
+		ammo_11.43x23_hydro = 2 \n
+		wpn_binoc \n
+		device_torch \n
+		bandage = 2 \n
+		medkit_army = 1 \n
+		medkit_scientic = 1 \n
+		stimpack_army = 1 \n
+		stimpack_scientic = 1 \n
+		#include "gameplay\supplies\character_items_nd.xml"
+		#include "gameplay\supplies\character_food.xml"
+		#include "gameplay\supplies\character_drugs_3.xml"
+		#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "yan_merc_goblin" then
+			data.supplies= [[
+			[spawn] \n
+        wpn_m249_acog \n
+		ammo_5.56x45_fmj = 4 \n
+        ammo_5.56x45_ap  = 4 \n
+        wpn_sig220_n \n
+        ammo_11.43x23_fmj  = 2 \n
+		ammo_11.43x23_hydro = 2 \n
+		wpn_binoc \n
+		device_torch \n
+		bandage = 2 \n
+		medkit_army = 1 \n
+		medkit_scientic = 1 \n
+		stimpack_army = 1 \n
+		stimpack_scientic = 1 \n
+		#include "gameplay\supplies\character_items_nd.xml"
+		#include "gameplay\supplies\character_food.xml"
+		#include "gameplay\supplies\character_drugs_3.xml"
+		#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+        if character_id == "yan_merc_mower" then
+			data.supplies= [[
+			[spawn] \n
+		wpn_remington700_bas_mod_x_gen3 \n
+		ammo_7.62x51_fmj = 3 \n
+		ammo_7.62x51_ap = 2 \n
+		wpn_mp7_c-more \n
+        wpn_sig220_n \n
+        ammo_11.43x23_fmj  = 2 \n
+		ammo_11.43x23_hydro = 2 \n
+		detector3 \n
+		geiger_dead \n
+		wpn_binoc \n
+		device_torch \n
+		bandage = 2 \n
+		medkit_army = 1 \n
+		medkit_scientic = 1 \n
+		stimpack_army = 1 \n
+		stimpack_scientic = 1 \n
+		#include "gameplay\supplies\character_items_nd.xml"
+		#include "gameplay\supplies\character_food.xml"
+		#include "gameplay\supplies\character_drugs_3.xml"
+		#include "gameplay\supplies\character_drugs_sci.xml"
+			]]
+        end
+
+
+    end)
+end

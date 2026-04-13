@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+<!-- The Swamp Guardian squad -->
+<!-- Anatoly Gritzaenko-->
+	<specific_character id="csnosorog_guard_anatoly" team_default = "1">
+	#include "gameplay\profiles\character_desc_csky_4.xml"
+		<name>csnosorog_guard_anatoly</name>
+		<icon>ui_inGame2_nosorog</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio></bio>
+		<class>csnosorog_guard_anatoly</class>
+		<community>csky</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="5000" max="10000" infinitive="0"></money>
+		<rank>26498</rank>
+		<reputation>2000</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo4nosorog_mk2_cs6b</visual>
+		<snd_config>characters_voice\human\dolg_2\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_pkm_zulus \n
+			ammo_pkm_100 = 2 \n
+			ammo_7.62x54_ap = 2 \n
+			wpn_mp412 \n
+			ammo_357_hp_mag = 5 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			hand_radio \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>csnosorog_guard_anatoly_ask_story</actor_dialog>
+		<!-- might as well let them give tasks -->
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+<!-- Kazymyr Vlasyuk, the 2nd in command-->
+	<specific_character id="csnosorog_guard_kazymyr" team_default = "1">
+	#include "gameplay\profiles\character_desc_csky_4.xml"
+		<name>csnosorog_guard_kazymyr</name>
+		<icon>ui_inGame2_nosorog</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>csnosorog_guard_kazymyr</class>
+		<community>csky</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>18940</rank>
+		<reputation>2000</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo4nosorog_mk1</visual>
+		<snd_config>characters_voice\human\csky_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_spas12_custom \n
+			ammo_12x70_buck = 3 \n
+			ammo_12x76_zhekan = 2 \n
+			ammo_12x76_dart = 2 \n
+			wpn_cz75_auto \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_ap = 2 \n
+			ammo_9x19_pbp = 2 \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+<!-- Stefan Omelchuk, the guerrilla trainer-->
+	<specific_character id="csnosorog_guard_stefan" team_default = "1">
+	#include "gameplay\profiles\character_desc_csky_4.xml"
+		<name>csnosorog_guard_stefan</name>
+		<icon>ui_inGame2_stalker_merc_skat</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>csnosorog_guard_stefan</class>
+		<community>csky</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>17162</rank>
+		<reputation>1500</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo_skat</visual>
+		<snd_config>characters_voice\human\csky_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_ak105_kobra \n
+			ammo_5.45x39_fmj = 3 \n
+			ammo_5.45x39_ap = 2 \n
+			ammo_5.45x39_ep = 2 \n
+			wpn_cz75_auto \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_ap = 2 \n
+			ammo_9x19_pbp = 2 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+<!-- Petro Hrytsenko, the wilderness trainer-->
+	<specific_character id="csnosorog_guard_petro" team_default = "1">
+	#include "gameplay\profiles\character_desc_csky_4.xml"
+		<name>csnosorog_guard_petro</name>
+		<icon>ui_inGame2_csky_nauchniy</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>csnosorog_guard_petro</class>
+		<community>csky</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>16275</rank>
+		<reputation>1500</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo_seva_3</visual>
+		<snd_config>characters_voice\human\csky_1\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_svd_custom_ps01 \n
+			ammo_7.62x54_7h1 = 3 \n
+			ammo_7.62x54_ap = 2 \n
+			ammo_7.62x54_7h14 = 2 \n
+			wpn_cz75_auto \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_ap = 2 \n
+			ammo_9x19_pbp = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<!-- hacer una introduccion appropiada -->
+		<!-- <start_dialog>zat_b22_stalker_medic_start</start_dialog> -->
+		<actor_dialog>dm_medic_general</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+<!-- Nina Palij, the anomaly trainer-->
+	<specific_character id="csnosorog_guard_nina" team_default = "1">
+	#include "gameplay\profiles\character_desc_csky_4.xml"
+		<name>csnosorog_guard_nina</name>
+		<icon>ui_inGame2_csky_nauchniy</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>csnosorog_guard_nina</class>
+		<community>csky</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>16830</rank>
+		<reputation>1500</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo_seva_2</visual>
+		<snd_config>characters_voice\human\woman\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_mosin_nina \n
+			ammo_7.62x54_7h1 = 3 \n
+			ammo_7.62x54_ap = 2 \n
+			ammo_7.62x54_7h14 = 2 \n
+			wpn_cz75_auto \n
+			ammo_9x19_fmj = 3 \n
+			ammo_9x19_ap = 2 \n
+			ammo_9x19_pbp = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 2 \n
+			stimpack_army = 2 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+		<!-- <mechanic_mode>1</mechanic_mode> -->
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<!-- <actor_dialog>dm_init_mechanic</actor_dialog> -->
+		<!-- <actor_dialog>dm_tech_repair</actor_dialog> -->
+		<actor_dialog>dm_encrypted_pda</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+
+<!-- The Iskra team -->
+<!-- Topol-->
+	<specific_character id="ecolog_iskra_topol" team_default = "1">
+	#include "gameplay\profiles\character_desc_ecolog_5.xml"
+		<name>ecolog_iskra_topol</name>
+		<icon>ui_inGame2_nosorog</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio></bio>
+		<class>ecolog_iskra_topol</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="5000" max="10000" infinitive="0"></money>
+		<rank>26498</rank>
+		<reputation>2000</reputation>
+		<visual>actors\stalker_ecologist\stalker_eco_nosorog_mk2_turtle</visual>
+		<snd_config>characters_voice\human\ecolog_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_fn2000_nimble \n
+			ammo_5.56x45_fmj = 3 \n
+			ammo_5.56x45_ss190 = 2 \n
+			ammo_5.56x45_ap = 2 \n
+			wpn_fnx45_custom \n
+			ammo_11.43x23_fmj = 3 \n
+			ammo_11.43x23_hydro = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			hand_radio \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>csnosorog_guard_topol_ask_story</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+<!-- Mace, scientific nosorog, shotgun-->
+	<specific_character id="ecolog_iskra_mace" team_default = "1">
+	#include "gameplay\profiles\character_desc_ecolog_5.xml"
+		<name>ecolog_iskra_mace</name>
+		<icon>ui_inGame2_nosorog</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>ecolog_iskra_mace</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>18940</rank>
+		<reputation>1400</reputation>
+		<visual>actors\stalker_ecologist\stalker_eco_nosorog_mk1</visual>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_saiga12s_kobra \n
+			ammo_12x70_buck = 3 \n
+			ammo_12x76_zhekan = 2 \n
+			ammo_12x76_dart = 2 \n
+			wpn_fnp45_custom \n
+			ammo_11.43x23_fmj = 3 \n
+			ammo_11.43x23_hydro = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+		<!-- <mechanic_mode>1</mechanic_mode> -->
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<!-- <actor_dialog>dm_init_mechanic</actor_dialog> -->
+		<!-- <actor_dialog>dm_tech_repair</actor_dialog> -->
+		<actor_dialog>dm_encrypted_pda</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+<!-- Snake-->
+	<specific_character id="ecolog_iskra_snake" team_default = "1">
+	#include "gameplay\profiles\character_desc_ecolog_5.xml"
+		<name>ecolog_iskra_snake</name>
+		<icon>ui_inGame2_soldier_prototip_bulat</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>ecolog_iskra_snake</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>18940</rank>
+		<reputation>900</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_9_proto</visual>
+		<snd_config>characters_voice\human\ecolog_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_hk417_acog \n
+			ammo_5.7x28_ss190 = 3 \n
+			ammo_5.7x28_ss195 = 2 \n
+			wpn_fnp45_custom \n
+			ammo_11.43x23_fmj = 3 \n
+			ammo_11.43x23_hydro = 2 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<!-- hacer una introduccion appropiada -->
+		<!-- <start_dialog>zat_b22_stalker_medic_start</start_dialog> -->
+		<actor_dialog>dm_medic_general</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+<!-- Spirit-->
+	<specific_character id="ecolog_iskra_spirit" team_default = "1">
+	#include "gameplay\profiles\character_desc_ecolog_5.xml"
+		<name>ecolog_iskra_spirit</name>
+		<icon>ui_inGame2_neutral_nauchniy</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>ecolog_iskra_spirit</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>16275</rank>
+		<reputation>1200</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_nauchniy</visual>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_sr25 \n
+			ammo_7.62x51_fmj = 4 \n
+			ammo_7.62x51_ap = 3 \n
+			wpn_fnp45_custom \n
+			ammo_11.43x23_fmj = 3 \n
+			ammo_11.43x23_hydro = 2 \n
+			detector3 \n
+			geiger_dead \n
+			wpn_binoc \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+<!-- Marshal, the newbie-->
+	<specific_character id="ecolog_iskra_marshal" team_default = "1">
+	#include "gameplay\profiles\character_desc_ecolog_5.xml"
+		<name>ecolog_iskra_marshal</name>
+		<icon>ui_inGame2_neutral_nauchniy</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<class>ecolog_iskra_marshal</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<money min="1000" max="10000" infinitive="0"></money>
+		<rank>505</rank>
+		<reputation>1000</reputation>
+		<visual>actors\stalker_ecologist\stalker_ecolog_guard3_seva</visual>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<supplies>
+			[spawn] \n
+			wpn_p90_eot \n
+			ammo_5.7x28_ss190 = 4 \n
+			ammo_5.7x28_ss195 = 3 \n
+			wpn_fnp45_custom \n
+			ammo_11.43x23_fmj = 3 \n
+			ammo_11.43x23_hydro = 2 \n
+			device_torch \n
+			bandage = 2 \n
+			medkit_army = 1 \n
+			medkit_scientic = 1 \n
+			stimpack_army = 1 \n
+			stimpack_scientic = 1 \n \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+			#include "gameplay\supplies\character_drugs_3.xml"
+			#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+
+<!-- Hatchet's team -->
+<!-- configs\gameplay\character_desc_yantar.xml -->
+
+
+<!-- the rookie squad lead (mostly to have a sender for the initialization message-->
+	<specific_character id="csnosorog_guard_rookie_minder" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		#include "gameplay\profiles\character_desc_csky_4.xml"
+		<class>csnosorog_guard_rookie_squadie</class>
+		<community>csky</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<rank>532</rank>
+		<reputation>368</reputation>
+		<icon>ui_inGame2_csky_3</icon>
+		<snd_config>characters_voice\human\csky_3\</snd_config>
+		<visual>actors\stalker_nebo\stalker_nebo3a</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74m \n
+			ammo_5.45x39_fmj = 3 \n
+			wpn_fort \n
+			ammo_9x18_fmj = 3 \n
+			#include "gameplay\supplies\character_items_nd.xml"
+			#include "gameplay\supplies\character_food.xml"
+		</supplies>
+		#include "gameplay\character_criticals.xml"
+		#include "gameplay\character_dialogs.xml"
+		<start_dialog>hello_dialog</start_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+</xml>

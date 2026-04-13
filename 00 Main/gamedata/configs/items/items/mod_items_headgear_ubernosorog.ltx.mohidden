@@ -1,0 +1,5 @@
+[helm_spartan_plus_headgear_hud]:helm_spartan_headgear_hud
+item_visual	= dynamics\weapons\wpn_headgear\helm_spartan_plus.ogf
+
+[helm_sentinel_headgear_hud]:helm_spartan_headgear_hud
+item_visual	= dynamics\weapons\wpn_headgear\sentinel_hud.ogf

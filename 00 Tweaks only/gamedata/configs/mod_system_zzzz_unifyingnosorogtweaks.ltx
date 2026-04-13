@@ -1,0 +1,332 @@
+
+;-------General tweaks to exos and nosorogs to respect the proper damage of their parts
+
+;--First we buff the heads of radsuits and exos, so their resistance properly correspond to that of the exohelm
+
+![actor_armor_radiation]:head_damage_040, !head_damage_030
+![actor_armor_freedom_exo]:head_damage_040, !head_damage_030
+![actor_armor_bandit_exo]:head_damage_040, !head_damage_030
+![actor_armor_exo]:head_damage_040, !head_damage_030
+![actor_armor_duty_exo]:head_damage_040, !head_damage_030
+
+;The army exo is a special kind. It gets a buff of 5 to head and torso over average exos
+;So we buff its head. We'll gave it its own head bones
+@[head_damage_043]; army exo ; CLASS III + and a half
+bip01_neck	= 1, 0.43
+bip01_head	= 1, 0.43
+eyelid_1	= 1, 0.43
+eye_left	= 1, 0.43
+eye_right	= 1, 0.43
+jaw_1		= 1, 0.43
+
+@[actor_armor_military_exo]:body_damage_050, head_damage_043
+ap_scale	= 0.7
+
+;--Some radiation outfits have a nosorog resistance. Let's standardize them
+;maybe we can find them a non crazy buff?
+;These were using the nosorog bones set, 45 + 35
+;Some Radsuits are also stated to be for exploration with reduced combat capabilities.
+;So we need two protections, one for improved and another for explorators
+
+;First we create a new improved set. It'd be silly to make them surpass exos, so we find a middle ground
+;Torso 43 it's like the weaker exos. That's fine. And we give them the 40 from exohelm
+;Most radsuits have an ap_scale of 0.75, but let's leave these the 0.7. They're supposed to be better anyway.
+;This way they're still the better radsuits, but only barely as good as the lightest exos
+@[actor_armor_radiation_extra]:body_damage_043, head_damage_040
+ap_scale	= 0.7
+
+;Now we change the bones set for the super radsuits
+![exo_wood_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_dolg_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_dolg_red_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_dolg_urban_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_dolg_wood_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_merc_grass_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_merc_urban_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![exo_merc_wood_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+![freedom_exo_vineleaf_outfit]
+bones_koeff_protection	= actor_armor_radiation_extra
+
+; Now we do the exploration radsuit set. We need the body bones first
+; We make it 375, midway between the 35 of skats and 40 of normal radsuits
+
+@[body_damage_0375] ; CLASS III
+bip01_pelvis		= 1, 0.375
+bip01_spine			= 1, 0.375
+bip01_spine1		= 1, 0.375
+bip01_spine2		= 1, 0.375
+
+bip01_l_clavicle	= 1, 0.375
+bip01_l_upperarm	= 1, 0.375
+bip01_l_forearm		= 1, 0.375
+bip01_l_hand		= 1, 0.075
+
+bip01_r_clavicle	= 1, 0.375
+bip01_r_upperarm	= 1, 0.375
+bip01_r_forearm		= 1, 0.375
+bip01_r_hand		= 1, 0.075
+
+bip01_l_thigh		= 1, 0.375
+bip01_l_calf		= 1, 0.375
+bip01_l_foot		= 1, 0.075
+bip01_r_thigh		= 1, 0.375
+bip01_r_calf		= 1, 0.375
+bip01_r_foot		= 1, 0.075
+
+[actor_armor_radiation_exploration]:body_damage_0375, head_damage_040
+ap_scale	= 0.75
+
+;And we change the bones set for the explorer radsuits
+![exo_wood_outfit]
+bones_koeff_protection	= actor_armor_radiation_exploration
+![exo_dolg_wood_outfit]
+bones_koeff_protection	= actor_armor_radiation_exploration
+![exo_merc_grass_outfit]
+bones_koeff_protection	= actor_armor_radiation_exploration
+![exo_merc_wood_outfit]
+bones_koeff_protection	= actor_armor_radiation_exploration
+![freedom_exo_vineleaf_outfit]
+bones_koeff_protection	= actor_armor_radiation_exploration
+
+;now Nosorogs should get the 45 to head, as per Spartan helmet
+;and to separate them from exos, 55 to torso across the board, with 60 for army nosorog
+;But there's no body_damage section above 50, so we gotta do them ourselves
+
+;this will be the nosorog torso for a non combat faction, like ecologist
+@[body_damage_053]
+bip01_pelvis		= 1, 0.53
+bip01_spine			= 1, 0.53
+bip01_spine1		= 1, 0.53
+bip01_spine2		= 1, 0.53
+bip01_l_clavicle	= 1, 0.53
+bip01_l_upperarm	= 1, 0.53
+bip01_l_forearm		= 1, 0.53
+bip01_l_hand		= 1, 0.105
+bip01_r_clavicle	= 1, 0.53
+bip01_r_upperarm	= 1, 0.53
+bip01_r_forearm		= 1, 0.53
+bip01_r_hand		= 1, 0.105
+bip01_l_thigh		= 1, 0.53
+bip01_l_calf		= 1, 0.53
+bip01_l_foot		= 1, 0.105
+bip01_r_thigh		= 1, 0.53
+bip01_r_calf		= 1, 0.53
+bip01_r_foot		= 1, 0.105
+
+;this will be our "average nosorog" torso
+@[body_damage_055]
+bip01_pelvis		= 1, 0.55
+bip01_spine			= 1, 0.55
+bip01_spine1		= 1, 0.55
+bip01_spine2		= 1, 0.55
+bip01_l_clavicle	= 1, 0.55
+bip01_l_upperarm	= 1, 0.55
+bip01_l_forearm		= 1, 0.55
+bip01_l_hand		= 1, 0.11
+bip01_r_clavicle	= 1, 0.55
+bip01_r_upperarm	= 1, 0.55
+bip01_r_forearm		= 1, 0.55
+bip01_r_hand		= 1, 0.11
+bip01_l_thigh		= 1, 0.55
+bip01_l_calf		= 1, 0.55
+bip01_l_foot		= 1, 0.11
+bip01_r_thigh		= 1, 0.55
+bip01_r_calf		= 1, 0.55
+bip01_r_foot		= 1, 0.11
+
+;the torso for combat factions, like Duty
+@[body_damage_057]
+bip01_pelvis		= 1, 0.57
+bip01_spine			= 1, 0.57
+bip01_spine1		= 1, 0.57
+bip01_spine2		= 1, 0.57
+bip01_l_clavicle	= 1, 0.57
+bip01_l_upperarm	= 1, 0.57
+bip01_l_forearm		= 1, 0.57
+bip01_l_hand		= 1, 0.115
+bip01_r_clavicle	= 1, 0.57
+bip01_r_upperarm	= 1, 0.57
+bip01_r_forearm		= 1, 0.57
+bip01_r_hand		= 1, 0.115
+bip01_l_thigh		= 1, 0.57
+bip01_l_calf		= 1, 0.57
+bip01_l_foot		= 1, 0.115
+bip01_r_thigh		= 1, 0.57
+bip01_r_calf		= 1, 0.57
+bip01_r_foot		= 1, 0.115
+
+;oh my, the torso for the army nosorog
+@[body_damage_060]
+bip01_pelvis		= 1, 0.6
+bip01_spine			= 1, 0.6
+bip01_spine1		= 1, 0.6
+bip01_spine2		= 1, 0.6
+bip01_l_clavicle	= 1, 0.6
+bip01_l_upperarm	= 1, 0.6
+bip01_l_forearm		= 1, 0.6
+bip01_l_hand		= 1, 0.12
+bip01_r_clavicle	= 1, 0.6
+bip01_r_upperarm	= 1, 0.6
+bip01_r_forearm		= 1, 0.6
+bip01_r_hand		= 1, 0.12
+bip01_l_thigh		= 1, 0.6
+bip01_l_calf		= 1, 0.6
+bip01_l_foot		= 1, 0.12
+bip01_r_thigh		= 1, 0.6
+bip01_r_calf		= 1, 0.6
+bip01_r_foot		= 1, 0.12
+
+;And now we get to the torsos for our new variants.
+
+;our ecologist variant won't be made for combat. But let's make those extra plates count for something
+[body_damage_063]
+bip01_pelvis		= 1, 0.63
+bip01_spine			= 1, 0.63
+bip01_spine1		= 1, 0.63
+bip01_spine2		= 1, 0.63
+bip01_l_clavicle	= 1, 0.63
+bip01_l_upperarm	= 1, 0.63
+bip01_l_forearm		= 1, 0.63
+bip01_l_hand		= 1, 0.125
+bip01_r_clavicle	= 1, 0.63
+bip01_r_upperarm	= 1, 0.63
+bip01_r_forearm		= 1, 0.63
+bip01_r_hand		= 1, 0.125
+bip01_l_thigh		= 1, 0.63
+bip01_l_calf		= 1, 0.63
+bip01_l_foot		= 1, 0.125
+bip01_r_thigh		= 1, 0.63
+bip01_r_calf		= 1, 0.63
+bip01_r_foot		= 1, 0.125
+
+;This is for an average variant, such as the Hatchet
+[body_damage_065]
+bip01_pelvis		= 1, 0.65
+bip01_spine			= 1, 0.65
+bip01_spine1		= 1, 0.65
+bip01_spine2		= 1, 0.65
+bip01_l_clavicle	= 1, 0.65
+bip01_l_upperarm	= 1, 0.65
+bip01_l_forearm		= 1, 0.65
+bip01_l_hand		= 1, 0.13
+bip01_r_clavicle	= 1, 0.65
+bip01_r_upperarm	= 1, 0.65
+bip01_r_forearm		= 1, 0.65
+bip01_r_hand		= 1, 0.13
+bip01_l_thigh		= 1, 0.65
+bip01_l_calf		= 1, 0.65
+bip01_l_foot		= 1, 0.13
+bip01_r_thigh		= 1, 0.65
+bip01_r_calf		= 1, 0.65
+bip01_r_foot		= 1, 0.13
+
+;this is the Thunderstorm's torso. It's supposed to be a strong combat model so letsa go
+[body_damage_067]
+bip01_pelvis		= 1, 0.67
+bip01_spine			= 1, 0.67
+bip01_spine1		= 1, 0.67
+bip01_spine2		= 1, 0.67
+bip01_l_clavicle	= 1, 0.67
+bip01_l_upperarm	= 1, 0.67
+bip01_l_forearm		= 1, 0.67
+bip01_l_hand		= 1, 0.135
+bip01_r_clavicle	= 1, 0.67
+bip01_r_upperarm	= 1, 0.67
+bip01_r_forearm		= 1, 0.67
+bip01_r_hand		= 1, 0.135
+bip01_l_thigh		= 1, 0.67
+bip01_l_calf		= 1, 0.67
+bip01_l_foot		= 1, 0.135
+bip01_r_thigh		= 1, 0.67
+bip01_r_calf		= 1, 0.67
+bip01_r_foot		= 1, 0.135
+
+;and this for the Hurricane. it bieg, so we just jump a whole armor tier
+[body_damage_075]
+bip01_pelvis		= 1, 0.75
+bip01_spine			= 1, 0.75
+bip01_spine1		= 1, 0.75
+bip01_spine2		= 1, 0.75
+bip01_l_clavicle	= 1, 0.75
+bip01_l_upperarm	= 1, 0.75
+bip01_l_forearm		= 1, 0.75
+bip01_l_hand		= 1, 0.14
+bip01_r_clavicle	= 1, 0.75
+bip01_r_upperarm	= 1, 0.75
+bip01_r_forearm		= 1, 0.75
+bip01_r_hand		= 1, 0.14
+bip01_l_thigh		= 1, 0.75
+bip01_l_calf		= 1, 0.75
+bip01_l_foot		= 1, 0.14
+bip01_r_thigh		= 1, 0.75
+bip01_r_calf		= 1, 0.75
+bip01_r_foot		= 1, 0.14
+
+;With Dux's model, the variants' helm looks like an improved Spartan helmet, so
+@[head_damage_050]; spartan ; CLASS III +++
+bip01_neck	= 1, 0.50
+bip01_head	= 1, 0.50
+eyelid_1	= 1, 0.50
+eye_left	= 1, 0.50
+eye_right	= 1, 0.50
+jaw_1		= 1, 0.50
+
+;for the hurricane and similarly defensive ubers
+@[head_damage_055]; spartan ; CLASS III ++++
+bip01_neck	= 1, 0.55
+bip01_head	= 1, 0.55
+eyelid_1	= 1, 0.55
+eye_left	= 1, 0.55
+eye_right	= 1, 0.55
+jaw_1		= 1, 0.55
+
+;and now that we got our new torsos, we modify the base nosorog set
+![actor_armor_class5]:body_damage_055, head_damage_045, !body_damage_045, !head_damage_035
+
+;And another for our non-combat nosorog
+[actor_armor_class5minus]:body_damage_053, head_damage_045
+ap_scale	= 0.7
+
+;goodie. Now we make our custom sets
+;the logical jump in ap_scale would be to 0.6
+[actor_armor_ecolog_nosorog_turtle]:body_damage_063, head_damage_050
+ap_scale	= 0.6
+
+[actor_armor_merc_nosorog_hatchet]:body_damage_065, head_damage_050
+ap_scale	= 0.6
+
+[actor_armor_csnosorog_storm]:body_damage_067, head_damage_050
+ap_scale	= 0.6
+
+[actor_armor_csnosorog_hurricane]:body_damage_075, head_damage_055
+ap_scale	= 0.55
+
+;don't forget the npcs wearing them
+;those hit_fraction_npc are starting to look awfully low though
+[stalker_ecolog_nosorog_ecolog]:body_damage_053, head_damage_045
+hit_fraction_npc	= 0.15
+ap_scale			= 0.7
+
+[stalker_ecolog_nosorog_turtle]:body_damage_063, head_damage_050
+hit_fraction_npc	= 0.10
+ap_scale			= 0.6
+
+[stalker_merc_nosorog_turtle]:body_damage_065, head_damage_050
+hit_fraction_npc	= 0.10
+ap_scale			= 0.6
+
+[stalker_csky_nosorog_storm]:body_damage_067, head_damage_050
+hit_fraction_npc	= 0.10
+ap_scale			= 0.6
+
+[stalker_csky_nosorog_hurricane]:body_damage_075, head_damage_055
+hit_fraction_npc	= 0.10
+ap_scale			= 0.55
